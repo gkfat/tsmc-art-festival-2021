@@ -1,0 +1,51 @@
+/* 
+** Programs ----------------------------------------
+*/
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.special {
+  justify-content: space-between;
+}
+.row .title-category {
+  width: 850px;
+  margin: 0 auto;
+}
+.program {
+  width: 400px;
+  height: 400px;
+  border: 1px solid blue;
+  margin-right: 50px;
+  position: relative;
+}
+.program:last-child {
+  margin-right: 0;
+}
+
+.program .img {
+
+}
+.program .description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 150px;
+  margin: 0;
+  background-color: #eee;
+  padding: 20px;
+}
+.program-title {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.program-info {
+
+}
+.arrow {
+  width: 50px;
+  margin-left: auto;
+}

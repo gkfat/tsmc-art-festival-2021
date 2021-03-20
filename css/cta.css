@@ -1,0 +1,44 @@
+/* 
+** CTA ----------------------------------------
+*/
+.cards-frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  width: 600px;
+  height: 100%;
+  padding: 25px 100px;
+  border: 1px solid red;
+}
+.card-title {
+  font-size: 3.6rem;
+  line-height: 4rem;
+  text-align: center;
+}
+.cta-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.card-hr {
+  height: 1px;
+  width: 100%;
+  background-color: blue;
+  margin: 40px 0;
+}
+
+.go-top-frame {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.go-top {
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+}

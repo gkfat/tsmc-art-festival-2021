@@ -1,0 +1,86 @@
+/* 
+** Header ----------------------------------------
+*/
+
+.section-nav {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #fff;
+  border-bottom: var(--hr);
+  transition: top 0.5s;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items__ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav-items__li {
+  padding: 30px 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 10px 0 10px;
+  border-color: #125ba8 transparent transparent transparent;
+}
+
+/* 子選單 */
+.dropdown-btn {
+  position: relative;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  z-index: 1;
+}
+.dropdown-btn:hover .dropdown {
+  display: block;
+}
+.dropdown .nav-items__ul {
+  border-top: 1px solid red;
+  justify-content: center;
+  width: 150vw;
+  transform: translate(-50%);
+  background-color: #fff;
+  height: 70px;
+}
+.dropdown-item:hover {
+  color: blue;
+}
+
+.dots {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px solid red;
+}

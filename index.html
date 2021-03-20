@@ -12,8 +12,350 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-  <h1>aaaaaa</h1>
+  <!-- Nav Section -->
+  <section class="section-nav">
+    <div class="container">
+      <div class="nav-items">
+        <a class="navbar-brand" href="#kv">Logo</a>
+        <ul class="nav-items__ul">
+          <li class="nav-items__li">
+            <a class="nav-item" href="#preface">心築<br>序言</a>
+          </li>
+          <span class="slash">／</span>
+          <li class="nav-items__li">
+            <a class="nav-item" href="#video">心築<br>觀影</a>
+          </li>
+          <span class="slash">／</span>
+          <li class="nav-items__li dropdown-btn">
+            <a class="nav-item" href="#programs">節目<br>資訊</a>
+            <span class="triangle"></span>
+            <!-- 子選單 -->
+            <div class="dropdown">
+              <ul class="nav-items__ul">
+                <li class="nav-items__li">
+                  <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                  <a class="dropdown-item" href="#program_1">特別企劃</a>
+                </li>
+                <span class="slash">／</span>
+                <li class="nav-items__li">
+                  <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                  <a class="dropdown-item" href="#program_2">戲劇</a>
+                </li>
+                <span class="slash">／</span>
+                <li class="nav-items__li">
+                  <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                  <a class="dropdown-item" href="#program_3">音樂</a>
+                </li>
+                <span class="slash">／</span>
+                <li class="nav-items__li">
+                  <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                  <a class="dropdown-item" href="#program_4">文史</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <span class="slash">／</span>
+          <li class="nav-items__li">
+            <a class="nav-item" href="#events">節目<br>場次</a>
+          </li>
+          <span class="slash">／</span>
+          <li class="nav-items__li">
+            <a class="nav-item" href="https://www.tsmc-foundation.org/index.aspx" target="_blank">基金會<br>官網</a>
+          </li>
+          <span class="slash">／</span>
+          <li class="nav-items__li">
+            <a class="nav-item" href="https://www.tsmc-foundation.org/Member/index.aspx" target="_blank">加入<br>心築</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
+  <!-- KV Section -->
+  <section id="kv" class="section section-kv">
+    <div class="kv">
+      <video class="kv-video" muted autoplay>
+        <source src="../assets/kv.mp4" type="video/mp4">
+      </video>
+    </div>
+    <a href="#preface">
+      <div class="icon-scroll"></div>
+    </a>
+  </section>
+
+  <!-- 心築序言 Section -->
+  <section id="preface" class="section section-preface">
+    <div class="container">
+      <div class="preface-intro">
+        <div class="preface-intro__content">
+          <h1 class="title-main">心築序言</h1>
+          <p class="title-category">她的舞台</p>
+          <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, iste quae! Voluptates tempore, sunt, delectus illum veritatis placeat perferendis ad, molestiae porro quibusdam magnam esse iusto impedit totam deserunt quisquam maiores atque quidem itaque enim repellat quaerat voluptatum nisi! Numquam, ullam sed excepturi repudiandae neque odio, officiis libero repellat in illo est corrupti consectetur maxime blanditiis quam consequuntur sequi error? Dolore magnam earum blanditiis, enim mollitia placeat. Deserunt praesentium corporis eos alias repellat reprehenderit voluptate. Aliquam ad eum doloremque quaerat temporibus? At itaque cumque odio, dolorem</p>
+          <div class="btn">
+            <p>完整內容</p>
+            <div>—></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="preface-img-frame">
+      <div class="preface-img"></div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="hr"></div>
+  </div>
+
+  <!-- 心築觀影 Section -->
+  <section id="video" class="section section-video">
+    <div class="container">
+      <div class="video-frame">
+        <div class="video"></div>
+        <div class="video-mask">
+          <div class="vide-mask__content">
+            <h1 class="title-main">心築觀影</h1>
+            <div class="btn">
+              <p>觀看影片</p>
+              <div>—></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="hr"></div>
+  </div>
+
+  <!-- 節目資訊 Section -->
+  <section id="programs" class="section section-programs">
+    <div class="container">
+      <h1 class="title-main">節目資訊</h1>
+      <!-- 特別企劃 -->
+      <div id="program_1">
+        <p class="title-category">特別企劃</p>
+      </div>
+      <div class="row special">
+        <div class="program">
+          <div class="img"></div>
+          <div class="description">
+            <div class="program-title">
+              Lorem
+            </div>
+            <div class="program-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vero.
+            </div>
+            <div class="arrow">-></div>
+          </div>
+        </div>
+        <div class="program">
+          <div class="img"></div>
+          <div class="description">
+            <div class="program-title">
+              Lorem
+            </div>
+            <div class="program-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vero.
+            </div>
+            <div class="arrow">-></div>
+          </div>
+        </div>
+        <div class="program">
+          <div class="img"></div>
+          <div class="description">
+            <div class="program-title">
+              Lorem
+            </div>
+            <div class="program-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vero.
+            </div>
+            <div class="arrow">-></div>
+          </div>
+        </div>
+      </div>
+      <!-- 戲劇 -->
+      <div id="program_2" class="row">
+        <p class="title-category">戲劇</p>
+      </div>
+      <div class="row">
+        <div class="program">
+          <div class="img"></div>
+          <div class="description">
+            <div class="program-title">
+              Lorem
+            </div>
+            <div class="program-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vero.
+            </div>
+            <div class="arrow">-></div>
+          </div>
+        </div>
+        <div class="program">
+          <div class="img"></div>
+          <div class="description">
+            <div class="program-title">
+              Lorem
+            </div>
+            <div class="program-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vero.
+            </div>
+            <div class="arrow">-></div>
+          </div>
+        </div>
+      </div>
+      <!-- 音樂 -->
+      <div id="program_3" class="row">
+        <p class="title-category">音樂</p>
+      </div>
+      <div class="row">
+        <div class="program">
+          <div class="img"></div>
+          <div class="description">
+            <div class="program-title">
+              Lorem
+            </div>
+            <div class="program-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vero.
+            </div>
+            <div class="arrow">-></div>
+          </div>
+        </div>
+        <div class="program">
+          <div class="img"></div>
+          <div class="description">
+            <div class="program-title">
+              Lorem
+            </div>
+            <div class="program-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vero.
+            </div>
+            <div class="arrow">-></div>
+          </div>
+        </div>
+      </div>
+      <!-- 文史 -->
+      <div id="program_4" class="row">
+        <p class="title-category">文史</p>
+      </div>
+      <div class="row">
+        <div class="program">
+          <div class="img"></div>
+          <div class="description">
+            <div class="program-title">
+              Lorem
+            </div>
+            <div class="program-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vero.
+            </div>
+            <div class="arrow">-></div>
+          </div>
+        </div>
+        <div class="program">
+          <div class="img"></div>
+          <div class="description">
+            <div class="program-title">
+              Lorem
+            </div>
+            <div class="program-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, vero.
+            </div>
+            <div class="arrow">-></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="hr"></div>
+  </div>
+
+  <!-- 節目場次 Section -->
+  <section id="events" class="section section-events">
+    <div class="container">
+      <h1 class="title-main">節目場次</h1>
+      <div class="events-nav">
+        <ul class="events-nav__ul">
+          <li class="events-nav__li">
+            <p>4月<span>APRIL</span></p>
+          </li>
+          <li class="events-nav__li">
+            <p>5月<span>MAY</span></p>
+          </li>
+          <li class="events-nav__li">
+            <p>6月<span>JUNE</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="events-frame">
+        
+    </div>
+  </section>
+
+
+  <!-- CTA Section -->
+  <section id="cta" class="section section-cta">
+    <div class="container">
+      <div class="cards-frame">
+        <div class="card">
+          <p class="card-title">基金會官網</p>
+          <div class="card-hr"></div>
+          <div class="cta-btn">
+            <p>了解更多</p>
+            <p>-></p>
+          </div>
+        </div>
+        <div class="card">
+          <p class="card-title">加入心築</p>
+          <div class="card-hr"></div>
+          <div class="cta-btn">
+            <p>了解更多</p>
+            <p>-></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="go-top-frame">
+      <div class="container">
+        <div class="go-top "></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <div id="footer" class="section section-footer">
+    <div class="container">
+      <p class="footer-title">主辦</p>
+      <div>Logo</div>
+      <p class="footer-title">協辦</p>
+      <div>
+        <span>lorem</span>
+        <span>lorem</span>
+        <span>lorem</span>
+        <span>lorem</span>
+        <span>lorem</span>
+        <span>lorem</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="copyright">台積電心築藝術季 All rights reserved &#x24B8; 2021</p>
 
   <script src="js/main.js"></script>
 </body>

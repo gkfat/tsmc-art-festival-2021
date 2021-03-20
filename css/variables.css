@@ -1,3 +1,5 @@
 :root {
-  --red: red;
+  --linkOrigin: rgb(218, 41, 41);
+  --linkHover: rgb(50, 93, 185);
+  --hr: rgb(179, 21, 21);
 }

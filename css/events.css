@@ -1,0 +1,40 @@
+/* 
+** Events ----------------------------------------
+*/
+
+.events-frame {
+  width: 100%;
+  height: 800px;
+  background-color: #eee;
+}
+.events-nav {
+  
+}
+.events-nav__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.events-nav__li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100px;
+  background-color: rgb(204, 125, 125);
+}
+
+.events-nav__li p {
+  position: relative;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+.events-nav__li span {
+  position: absolute;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  right: -50px;
+  bottom: 0;
+}
