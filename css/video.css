@@ -27,9 +27,37 @@
   left: 0;
   bottom: 0;
   width: 40%;
-  background-color: rgb(146, 98, 98);
+  background-color: var(--gray);
+  border-radius: 50px 0 0 0; 
+  overflow: hidden;
 }
 
 .video-mask__content {
   
+}
+
+
+/* 按鈕 */
+.section-video .btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  padding: 15px 30px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.5s;
+}
+.section-video .btn:hover {
+  background-color: #fff;
+  color: var(--darkGray);
+}
+.section-video .arrow {
+  background: url('../assets/arrow_white.png') no-repeat no-repeat center;
+  width: 120px;
+  height: 30px;
+}
+.section-video .btn:hover .arrow {
+  background: url('../assets/arrow.png') no-repeat no-repeat center;
 }

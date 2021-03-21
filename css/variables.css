@@ -1,5 +1,11 @@
 :root {
-  --linkOrigin: rgb(218, 41, 41);
-  --linkHover: rgb(50, 93, 185);
   --hr: rgb(179, 21, 21);
+  --darkGray: #738792;
+  --gray: #BECED7;
+  --lightGray: #C7D4DB;
+  --red_1: #E60013;
+  --red_2: #E4007F;
+  --red_3: #EA5414;
+  --red_4: #C30E23;
+  --dark: #231916;
 }

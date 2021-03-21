@@ -5,4 +5,27 @@
 .footer-title {
   font-size: 1.6rem;
   line-height: 2rem;
+  color: #fff;
+}
+.section-footer .dots {
+  margin-bottom: 10px;
+}
+.section-footer .dots .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 10px; 
+}
+.tsmc-logo {
+  background: url('../assets/tsmc-logo.png') no-repeat no-repeat center;
+  width: 300px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.assistants .assistant-logo {
+  color: #fff;
+}
+.assistants .assistant-logo:hover {
+  color: var(--lightGray);
 }

@@ -10,8 +10,14 @@
   right: 0;
   z-index: 2;
   background-color: #fff;
-  border-bottom: var(--hr);
+  border-bottom: var(--gray);
   transition: top 0.5s;
+}
+
+.logo {
+  background: url('../assets/logo.png') no-repeat no-repeat center;
+  width: 300px;
+  height: 70px;
 }
 
 .nav-items {
@@ -41,7 +47,11 @@
   height: 0;
   border-style: solid;
   border-width: 15px 10px 0 10px;
-  border-color: #125ba8 transparent transparent transparent;
+  border-color: var(--lightGray) transparent transparent transparent;
+}
+
+.dropdown-btn:hover .triangle {
+  border-color: var(--darkGray) transparent transparent transparent;
 }
 
 /* 子選單 */
@@ -59,28 +69,10 @@
   display: block;
 }
 .dropdown .nav-items__ul {
-  border-top: 1px solid red;
+  border-top: 1px solid var(--gray);
   justify-content: center;
   width: 150vw;
   transform: translate(-50%);
   background-color: #fff;
   height: 70px;
-}
-.dropdown-item:hover {
-  color: blue;
-}
-
-.dots {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  border: 1px solid red;
 }
