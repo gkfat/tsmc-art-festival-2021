@@ -1,8 +1,8 @@
 :root {
-  --hr: rgb(179, 21, 21);
-  --darkGray: #738792;
-  --gray: #BECED7;
+  --brightGray: #E5EBEE;
   --lightGray: #C7D4DB;
+  --gray: #BECED7;
+  --darkGray: #738792;
   --red_1: #E60013;
   --red_2: #E4007F;
   --red_3: #EA5414;

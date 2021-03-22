@@ -10,10 +10,6 @@
 @import './footer.css';
 
 /* Global Config */
-h1 {
-  color: var(--red);
-}
-
 ul, li, p, h1, h2, h3, h4, h5, h6, a {
   padding: 0;
   margin: 0;
@@ -26,7 +22,6 @@ a:link, a:visited {
 a:hover {
   color: var(--darkGray);
 }
-
 * {
   box-sizing: border-box;
 }
@@ -38,13 +33,11 @@ body {
   line-height: 1.6rem;
   overflow-x: hidden;
 }
-
 .section {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   padding: 100px 0;
 }
-
 .container {
   width: 1280px;
   margin: 0 auto;
@@ -88,7 +81,6 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-
 .dot {
   width: 10px;
   height: 10px;
@@ -104,7 +96,6 @@ body {
   height: 1px;
   background-color: var(--lightGray);
 }
-
 
 /* 標題 */
 .title-main {
@@ -125,6 +116,14 @@ body {
   color: var(--darkGray);
 }
 
+.title-event {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 1px;
+  width: 100%;
+  color: var(--darkGray);
+}
+
 /* Section */
 .section-kv {
   padding: 0;
@@ -139,10 +138,12 @@ body {
 
 .section-cta {
   position: relative;
+  min-height: 450px;
   height: 450px;
 }
 .section-footer {
   height: 450px;
+  min-height: 450px;
   background-color:var(--darkGray);
 }
 

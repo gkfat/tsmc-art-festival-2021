@@ -1,7 +1,6 @@
 /* 
 ** Header ----------------------------------------
 */
-
 .section-nav {
   width: 100vw;
   position: fixed;
@@ -10,35 +9,39 @@
   right: 0;
   z-index: 2;
   background-color: #fff;
-  border-bottom: var(--gray);
+  border-bottom: 1px solid var(--gray);
   transition: top 0.5s;
 }
-
 .logo {
   background: url('../assets/logo.png') no-repeat no-repeat center;
   width: 300px;
   height: 70px;
 }
-
 .nav-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .nav-items__ul {
   display: flex;
   justify-content: start;
   align-items: center;
 }
-
 .nav-items__li {
+  display: inline-block;
   padding: 30px 25px;
   text-align: center;
   cursor: pointer;
 }
-
+.section-nav .active {
+  color: var(--darkGray);
+}
+.section-nav .active .triangle {
+  display: block;
+  border-color: var(--darkGray) transparent transparent transparent;
+}
 .triangle {
+  display: none;
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -49,14 +52,18 @@
   border-width: 15px 10px 0 10px;
   border-color: var(--lightGray) transparent transparent transparent;
 }
-
 .dropdown-btn:hover .triangle {
+  display: block;
   border-color: var(--darkGray) transparent transparent transparent;
+}
+.dropdown-btn:hover .dropdown-btn__a {
+  color: var(--darkGray);
 }
 
 /* 子選單 */
 .dropdown-btn {
   position: relative;
+  height: auto;
 }
 .dropdown {
   display: none;
@@ -68,11 +75,18 @@
 .dropdown-btn:hover .dropdown {
   display: block;
 }
+.dropdown-item:hover {
+  color: var(--darkGray);
+}
+.dropdown-item {
+  padding: 15px 20px;
+}
 .dropdown .nav-items__ul {
-  border-top: 1px solid var(--gray);
   justify-content: center;
   width: 150vw;
   transform: translate(-50%);
   background-color: #fff;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
   height: 70px;
 }

@@ -20,21 +20,16 @@
           <div class="logo"></div>
         </a>
         <ul class="nav-items__ul">
-          <li class="nav-items__li">
-            <a class="nav-item" href="#preface">心築<br>序言</a>
-          </li>
+          <a class="nav-items__li" href="#preface">心築<br>序言</a>
           <span class="slash colorRed_1">／</span>
-          <li class="nav-items__li">
-            <a class="nav-item" href="#video">心築<br>觀影</a>
-          </li>
+          <a class="nav-items__li" href="#video">心築<br>觀影</a>
           <span class="slash colorRed_2">／</span>
-          <li class="nav-items__li dropdown-btn">
-            <a class="nav-item" href="#programs">節目<br>資訊</a>
-            <span class="triangle"></span>
-            <!-- 子選單 -->
-            <div class="dropdown">
-              <ul class="nav-items__ul">
-                <li class="nav-items__li">
+          <div class="dropdown-btn">
+            <a class="nav-items__li dropdown-btn__a" href="#programs">節目<br>資訊</a>
+              <span class="triangle"></span>
+              <!-- Dropdown 子選單 -->
+              <div class="dropdown">
+                <ul class="nav-items__ul">
                   <a class="dropdown-item" href="#program_1">
                     <div class="dots">
                       <div class="dot bgRed_1"></div>
@@ -42,9 +37,7 @@
                     </div>
                     <span>特別企劃</span>
                   </a>
-                </li>
-                <span class="slash colorRed_1">／</span>
-                <li class="nav-items__li">
+                  <span class="slash colorRed_1">／</span>
                   <a class="dropdown-item" href="#program_2">
                     <div class="dots">
                       <div class="dot bgRed_2"></div>
@@ -52,9 +45,7 @@
                     </div>
                     <span>戲曲</span>
                   </a>
-                </li>
-                <span class="slash colorRed_2">／</span>
-                <li class="nav-items__li">
+                  <span class="slash colorRed_2">／</span>
                   <a class="dropdown-item" href="#program_3">
                     <div class="dots">
                       <div class="dot bgRed_3"></div>
@@ -62,9 +53,7 @@
                     </div>
                     <span>音樂</span>
                   </a>
-                </li>
-                <span class="slash colorRed_3">／</span>
-                <li class="nav-items__li">
+                  <span class="slash colorRed_3">／</span>
                   <a class="dropdown-item" href="#program_4">
                     <div class="dots">
                       <div class="dot bgRed_4"></div>
@@ -72,22 +61,15 @@
                     </div>
                     <span>文史</span>
                   </a>
-                </li>
-              </ul>
-            </div>
-          </li>
+                </ul>
+              </div>
+          </div>
           <span class="slash colorRed_3">／</span>
-          <li class="nav-items__li">
-            <a class="nav-item" href="#events">節目<br>場次</a>
-          </li>
+          <a class="nav-items__li" href="#events">節目<br>場次</a>
           <span class="slash colorRed_4">／</span>
-          <li class="nav-items__li">
-            <a class="nav-item" href="https://www.tsmc-foundation.org/index.aspx" target="_blank">基金會<br>官網</a>
-          </li>
+            <a class="nav-items__li" href="https://www.tsmc-foundation.org/index.aspx" target="_blank">基金會<br>官網</a>
           <span class="slash colorRed_1">／</span>
-          <li class="nav-items__li">
-            <a class="nav-item" href="https://www.tsmc-foundation.org/Member/index.aspx" target="_blank">加入<br>心築</a>
-          </li>
+          <a class="nav-items__li" href="https://www.tsmc-foundation.org/Member/index.aspx" target="_blank">加入<br>心築</a>
         </ul>
       </div>
     </div>
@@ -103,10 +85,12 @@
     <a href="#preface">
       <div class="icon-scroll"></div>
     </a>
+    <!-- 心築序言錨點 -->
+    <div id="preface"></div>
   </section>
 
   <!-- 心築序言 Section -->
-  <section id="preface" class="section section-preface">
+  <section class="section section-preface">
     <div class="container">
       <div class="preface-intro">
         <div class="preface-intro__content">
@@ -124,6 +108,8 @@
       <div class="preface-img"></div>
       <p class="caption">工研院提供</p>
     </div>
+    <!-- 心築觀影錨點 -->
+    <div id="video"></div>
   </section>
 
   <div class="container">
@@ -131,7 +117,7 @@
   </div>
 
   <!-- 心築觀影 Section -->
-  <section id="video" class="section section-video">
+  <section class="section section-video">
     <div class="container">
       <div class="video-frame">
         <div class="video"></div>
@@ -146,18 +132,22 @@
         </div>
       </div>
     </div>
+    <!-- 節目資訊錨點 -->
+    <div id="programs"></div>
   </section>
 
   <div class="container">
     <div class="hr"></div>
   </div>
 
+  <!-- 特別企劃錨點 -->
+  <div id="program_1"></div>
   <!-- 節目資訊 Section -->
-  <section id="programs" class="section section-programs">
+  <section class="section section-programs">
     <div class="container">
       <h1 class="title-main">節目資訊</h1>
       <!-- 特別企劃 -->
-      <div id="program_1">
+      <div class="program_1">
         <div class="dots">
           <div class="dot bgRed_1"></div>
           <div class="dot bgDark"></div>
@@ -201,9 +191,11 @@
             <div class="arrow"></div>
           </div>
         </div>
+        <!-- 戲曲錨點 -->
+        <div id="program_2"></div>
       </div>
       <!-- 戲曲 -->
-      <div id="program_2" class="row-short">
+      <div class="program_2 row-short">
         <div class="dots">
           <div class="dot bgRed_2"></div>
           <div class="dot bgDark"></div>
@@ -235,9 +227,11 @@
             <div class="arrow"></div>
           </div>
         </div>
+        <!-- 音樂錨點 -->
+        <div id="program_3"></div>
       </div>
       <!-- 音樂 -->
-      <div id="program_3" class="row-short">
+      <div class="program_3 row-short">
         <div class="dots">
           <div class="dot bgRed_3"></div>
           <div class="dot bgDark"></div>
@@ -269,9 +263,11 @@
             <div class="arrow"></div>
           </div>
         </div>
+        <!-- 文史錨點 -->
+        <div id="program_4"></div>
       </div>
       <!-- 文史 -->
-      <div id="program_4" class="row-short">
+      <div class="program_4 row-short">
         <div class="dots">
           <div class="dot bgRed_4"></div>
           <div class="dot bgDark"></div>
@@ -305,6 +301,8 @@
         </div>
       </div>
     </div>
+    <!-- 節目場次錨點 -->
+    <div id="events"></div>
   </section>
 
   <div class="container">
@@ -312,29 +310,556 @@
   </div>
 
   <!-- 節目場次 Section -->
-  <section id="events" class="section section-events">
+  <section class="section section-events">
     <div class="container">
       <h1 class="title-main">節目場次</h1>
       <div class="events-nav">
         <ul class="events-nav__ul">
-          <li class="events-nav__li">
+          <li id="april" class="events-nav__li active">
             <p>4月<span>APRIL</span></p>
           </li>
-          <li class="events-nav__li">
+          <li id="may" class="events-nav__li">
             <p>5月<span>MAY</span></p>
           </li>
-          <li class="events-nav__li">
+          <li id="june" class="events-nav__li">
             <p>6月<span>JUNE</span></p>
           </li>
         </ul>
       </div>
     </div>
     <div class="events-frame">
-        
+      <!-- 4 月 -->
+      <div class="container april">
+        <div class="slider">
+          <div class="slide april-page1">
+            <!-- 第一排 -->
+            <div class="row">
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">戲曲</p>
+                  </div>
+                  <div class="area">桃園</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>3/31</span>
+                    <span class="event-day">.Wed</span>
+                  </div>
+                  <div class="event-time">1900</div>
+                  <div class="event-title">紅樓學者與崑曲藝術家的對話</div>
+                  <div class="event-location">國立中央大學 大講堂</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">特別企劃</p>
+                  </div>
+                  <div class="area">新竹</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>4/1</span>
+                    <span class="event-day">.Thu</span>
+                    <span class="day-to">&#x25B6;</span>
+                    <span>4/25</span>
+                    <span class="event-day">.Sun</span>
+                  </div>
+                  <div class="event-time">週二至週日0900-1200、1300-1700，週一休館</div>
+                  <div class="event-title">魏海敏 舞台的故事特展</div>
+                  <div class="event-location">新竹縣政府文化局美術館</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">戲曲</p>
+                  </div>
+                  <div class="area">台南</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>4/14</span>
+                    <span class="event-day">.Wed</span>
+                  </div>
+                  <div class="event-time">1900</div>
+                  <div class="event-title">紅樓學者與崑曲藝術家的對話</div>
+                  <div class="event-location">國立成功大學 成功廳</div>
+                </div>
+              </div>
+            </div>
+            <!-- 第二排 -->
+            <div class="row">
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">特別企劃</p>
+                  </div>
+                  <div class="area">新竹</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>4/17</span>
+                    <span class="event-day">.Sat</span>
+                  </div>
+                  <div class="event-time">1930</div>
+                  <div class="event-title">千年舞臺，我卻沒怎麼活過</div>
+                  <div class="event-location">新竹縣政府文化局演藝廳</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">特別企劃</p>
+                  </div>
+                  <div class="area">台中</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>4/24</span>
+                    <span class="event-day">.Sat</span>
+                  </div>
+                  <div class="event-time">1430</div>
+                  <div class="event-title">複眼人</div>
+                  <div class="event-location">臺中國家歌劇院 大劇院</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">特別企劃</p>
+                  </div>
+                  <div class="area">台中</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>4/25</span>
+                    <span class="event-day">.Sun</span>
+                  </div>
+                  <div class="event-time">1430</div>
+                  <div class="event-title">複眼人</div>
+                  <div class="event-location">臺中國家歌劇院 大劇院</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controller -->
+        <div class="row controllers">
+          <div class="controller">
+            <div class="control control-prev"></div>
+          </div>
+          <div class="controller">
+            <div class="control control-next"></div>
+          </div>
+          <div class="page">01/01</div>
+        </div>
+      </div>
+
+      <!-- 5 月 -->
+      <div class="container may">
+        <div class="slider">
+          <!-- 5 月 page 1 -->
+          <div class="slide may-page1">
+            <!-- 第一排 -->
+            <div class="row">
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">新竹</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>5/14</span>
+                    <span class="event-day">.Fri</span>
+                  </div>
+                  <div class="event-time">1900</div>
+                  <div class="event-title">天上眾神—人間的投影</div>
+                  <div class="event-location">國立清華大學 合勤演藝廳</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">戲曲</p>
+                  </div>
+                  <div class="area">新竹</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>5/15</span>
+                    <span class="event-day">.Sat</span>
+                  </div>
+                  <div class="event-time">1430</div>
+                  <div class="event-title">紅樓學者與崑曲藝術家的對話</div>
+                  <div class="event-location">國立陽明交通大學 演藝廳</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">戲曲</p>
+                  </div>
+                  <div class="area">新竹</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>5/15</span>
+                    <span class="event-day">.Sat</span>
+                  </div>
+                  <div class="event-time">1930</div>
+                  <div class="event-title">楊門女將</div>
+                  <div class="event-location">新竹縣政府文化局演藝廳</div>
+                </div>
+              </div>
+            </div>
+            <!-- 第二排 -->
+            <div class="row">
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">高雄</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>5/16</span>
+                    <span class="event-day">.Sun</span>
+                  </div>
+                  <div class="event-time">1400-1600</div>
+                  <div class="event-title">寫作工作坊｜午寐的間隙</div>
+                  <div class="event-location">三餘書店</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">新竹</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>5/21</span>
+                    <span class="event-day">.Fri</span>
+                  </div>
+                  <div class="event-time">1900</div>
+                  <div class="event-title">不朽愛情—牛郎和織女</div>
+                  <div class="event-location">國立清華大學 合勤演藝廳</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">新竹</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>5/22</span>
+                    <span class="event-day">.Sat</span>
+                  </div>
+                  <div class="event-time">1430-1600</div>
+                  <div class="event-title">潮味奇女子的文學人生</div>
+                  <div class="event-location">或者 Or Book Store</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 月 page 2 -->
+          <div class="slide may-page2">
+            <!-- 第一排 -->
+            <div class="row">
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">台北</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>5/23</span>
+                    <span class="event-day">.Sun</span>
+                  </div>
+                  <div class="event-time">1400-1600</div>
+                  <div class="event-title">潮味奇女子的文學人生</div>
+                  <div class="event-location">女書店</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">新竹</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>5/28</span>
+                    <span class="event-day">.Fri</span>
+                  </div>
+                  <div class="event-time">1900</div>
+                  <div class="event-title">天上．人間．古中國的男與女</div>
+                  <div class="event-location">國立清華大學 合勤演藝廳</div>
+                </div>
+              </div>
+              <div class="event-card"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Controller -->
+        <div class="row controllers">
+          <div class="controller">
+            <div class="control control-prev"></div>
+          </div>
+          <div class="controller">
+            <div class="control control-next"></div>
+          </div>
+          <div class="page">01/02</div>
+        </div>
+      </div>
+
+
+      <!-- 6 月 -->
+      <div class="container june">
+        <div class="slider">
+          <!-- 6 月 page 1 -->
+          <div class="slide june-page1">
+            <!-- 第一排 -->
+            <div class="row">
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">新竹</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>6/4</span>
+                    <span class="event-day">.Fri</span>
+                  </div>
+                  <div class="event-time">1900</div>
+                  <div class="event-title">人間愛恨—七女為父報仇</div>
+                  <div class="event-location">國立清華大學 合勤演藝廳</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">台南</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>6/5</span>
+                    <span class="event-day">.Sat</span>
+                  </div>
+                  <div class="event-time">1500-1700</div>
+                  <div class="event-title">講座｜課本外的琦君</div>
+                  <div class="event-location">曬書店Ｘ新營市民學堂</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">音樂</p>
+                  </div>
+                  <div class="area">台南</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>6/9</span>
+                    <span class="event-day">.Wed</span>
+                  </div>
+                  <div class="event-time">1930</div>
+                  <div class="event-title">Eric Lu 2021 Piano Recital</div>
+                  <div class="event-location">臺南文化中心演藝廳</div>
+                </div>
+              </div>
+            </div>
+            <!-- 第二排 -->
+            <div class="row">
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">新竹</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>6/13</span>
+                    <span class="event-day">.Sun</span>
+                  </div>
+                  <div class="event-time">1430-1600</div>
+                  <div class="event-title">潮味奇女子的文學人生</div>
+                  <div class="event-location">或者 Or Book Store</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">台南</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>6/19</span>
+                    <span class="event-day">.Sat</span>
+                  </div>
+                  <div class="event-time">1500-1700</div>
+                  <div class="event-title">潮味奇女子的文學人生</div>
+                  <div class="event-location">曬書店Ｘ新營市民學堂</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">高雄</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>6/20</span>
+                    <span class="event-day">.Sun</span>
+                  </div>
+                  <div class="event-time">1500-1630</div>
+                  <div class="event-title">潮味奇女子的文學人生</div>
+                  <div class="event-location">三餘書店</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 月 page 2 -->
+          <div class="slide june-page2">
+            <!-- 第一排 -->
+            <div class="row">
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">文史</p>
+                  </div>
+                  <div class="area">台北</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>6/27</span>
+                    <span class="event-day">.Sun</span>
+                  </div>
+                  <div class="event-time">1330-1730</div>
+                  <div class="event-title">潮味奇女子的文學人生</div>
+                  <div class="event-location">女書店</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">音樂</p>
+                  </div>
+                  <div class="area">新竹</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>7/2</span>
+                    <span class="event-day">.Fri</span>
+                  </div>
+                  <div class="event-time">1930</div>
+                  <div class="event-title">NSO馬勒傳奇</div>
+                  <div class="event-location">新竹市文化局演藝廳</div>
+                </div>
+              </div>
+              <div class="event-card">
+                <div class="event-card__header">
+                  <div class="dots">
+                    <div class="dot bgRed_1"></div>
+                    <div class="dot bgDark"></div>
+                    <p class="title-event">音樂</p>
+                  </div>
+                  <div class="area">台南</div>
+                </div>
+                <div class="event-card__body">
+                  <div class="event-date">
+                    <span>7/3</span>
+                    <span class="event-day">.Sat</span>
+                  </div>
+                  <div class="event-time">1930</div>
+                  <div class="event-title">NSO馬勒傳奇</div>
+                  <div class="event-location">臺南文化中心演藝廳</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controller -->
+        <div class="row controllers">
+          <div class="controller">
+            <div class="control control-prev"></div>
+          </div>
+          <div class="controller">
+            <div class="control control-next"></div>
+          </div>
+          <div class="page">01/02</div>
+        </div>
+      </div>
+    
     </div>
   </section>
 
-
+  
   <!-- CTA Section -->
   <section id="cta" class="section section-cta">
     <div class="container">

@@ -2,18 +2,11 @@
 ** Events ----------------------------------------
 */
 
-.events-frame {
-  width: 100%;
-  height: 800px;
-  background-color: #eee;
-}
-.events-nav {
-  
-}
 .events-nav__ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  height: 150px;
 }
 
 .events-nav__li {
@@ -22,7 +15,33 @@
   align-items: center;
   width: 30%;
   height: 100px;
-  background-color: rgb(204, 125, 125);
+  background-color: var(--brightGray);
+  color: var(--gray);
+  border-radius: 50px 0 0 0;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.events-nav__li:hover {
+  background-color: var(--gray);
+  color: #fff;
+}
+
+.section-events .active {
+  position: relative;
+  color: #fff;
+  background-color: var(--gray);
+  width: 32%;
+  height: 120px;
+}
+
+.section-events .active:after {
+  content: '';
+  position: absolute; 
+  bottom: 0;
+  left: 50px;
+  right: 50px;
+  height: 1px;
+  background-color: #fff;
 }
 
 .events-nav__li p {
@@ -37,4 +56,158 @@
   line-height: 1.8rem;
   right: -50px;
   bottom: 0;
+}
+
+/* Events Frame */
+.events-frame {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+  background-color: var(--gray);
+}
+.events-frame .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 80px;
+}
+.section-events .dots .dot {
+  width: 30px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 10px; 
+}
+
+/* Event Card */
+.event-card {
+  width: 30%;
+  align-self: stretch;
+}
+
+.event-card__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  margin-left: auto;
+  font-size: 1.6rem;
+  color: var(--darkGray);
+}
+
+.event-card__body {
+  border: 1px solid #fff;
+  padding: 20px;
+  height: 100%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.event-card__body:hover {
+  background-color: #fff;
+  color: var(--darkGray);
+}
+
+.event-date {
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  margin-bottom: 10px;
+}
+.event-date .event-day {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.event-date .day-to {
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+.event-time {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: 10px;
+}
+.event-title {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  margin-bottom: 10px;
+}
+.event-location {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  height: 750px;
+}
+.slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+.may-page2, .june-page2 {
+  transform: translateX(100vw);
+}
+
+/* Controller */
+.events-frame .controllers {
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+}
+.controller {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #fff;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.controller:hover {
+  background-color: #fff;
+}
+.controller:hover .control-prev {
+  border-color: transparent var(--gray) transparent transparent;
+}
+.controller:hover .control-next {
+  border-color: transparent transparent transparent var(--gray);
+}
+.control {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  transition: all 0.5s;
+}
+.control-prev {
+  border-width: 15px 25px 15px 0;
+  border-color: transparent #fff transparent transparent;
+}
+.control-next {
+  border-width: 15px 0 15px 25px;
+  border-color: transparent transparent transparent#fff;
+}
+.page {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 3px;
+  color: #fff;
 }
