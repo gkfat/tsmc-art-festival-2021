@@ -105,10 +105,15 @@
 }
 
 .event-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   border: 1px solid #fff;
   padding: 20px;
-  height: 100%;
+  height: 90%;
   color: #fff;
+  line-height: 1.8rem;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -120,36 +125,30 @@
 .event-date {
   font-weight: 800;
   font-size: 2.4rem;
-  line-height: 3rem;
-  margin-bottom: 10px;
 }
 .event-date .event-day {
   font-size: 1.2rem;
-  line-height: 1.5rem;
 }
 .event-date .day-to {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   vertical-align: middle;
 }
-.event-time {
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  margin-bottom: 10px;
+.event-location {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 .event-title {
   font-size: 2rem;
-  line-height: 2.2rem;
-  margin-bottom: 10px;
+  line-height: 2.4rem;
 }
-.event-location {
+.event-subtitle {
   font-size: 1.4rem;
-  line-height: 1.8rem;
 }
 
 /* Slider */
 .slider {
   position: relative;
-  height: 750px;
+  height: 780px;
 }
 .slide {
   position: absolute;

@@ -7,7 +7,9 @@
   <title>台積電心築藝術季 2021</title>
   <meta name="keywords" content="台積電,文教基金會,台積電文教基金會,TSMC,TSMC Foundation,台積電心築藝術季,心築藝術季">
   <meta name="description" content="台積電文教基金會官方網站-TSMC Foundation">
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!-- 載入字體 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -21,9 +23,9 @@
         </a>
         <ul class="nav-items__ul">
           <a class="nav-items__li" href="#preface">心築<br>序言</a>
-          <span class="slash colorRed_1">／</span>
+          <span class="slash colorRed_1">/</span>
           <a class="nav-items__li" href="#video">心築<br>觀影</a>
-          <span class="slash colorRed_2">／</span>
+          <span class="slash colorRed_2">/</span>
           <div class="dropdown-btn">
             <a class="nav-items__li dropdown-btn__a" href="#programs">節目<br>資訊</a>
               <span class="triangle"></span>
@@ -37,7 +39,7 @@
                     </div>
                     <span>特別企劃</span>
                   </a>
-                  <span class="slash colorRed_1">／</span>
+                  <span class="slash colorRed_1">/</span>
                   <a class="dropdown-item" href="#program_2">
                     <div class="dots">
                       <div class="dot bgRed_2"></div>
@@ -45,7 +47,7 @@
                     </div>
                     <span>戲曲</span>
                   </a>
-                  <span class="slash colorRed_2">／</span>
+                  <span class="slash colorRed_2">/</span>
                   <a class="dropdown-item" href="#program_3">
                     <div class="dots">
                       <div class="dot bgRed_3"></div>
@@ -53,7 +55,7 @@
                     </div>
                     <span>音樂</span>
                   </a>
-                  <span class="slash colorRed_3">／</span>
+                  <span class="slash colorRed_3">/</span>
                   <a class="dropdown-item" href="#program_4">
                     <div class="dots">
                       <div class="dot bgRed_4"></div>
@@ -64,11 +66,11 @@
                 </ul>
               </div>
           </div>
-          <span class="slash colorRed_3">／</span>
+          <span class="slash colorRed_3">/</span>
           <a class="nav-items__li" href="#events">節目<br>場次</a>
-          <span class="slash colorRed_4">／</span>
+          <span class="slash colorRed_4">/</span>
             <a class="nav-items__li" href="https://www.tsmc-foundation.org/index.aspx" target="_blank">基金會<br>官網</a>
-          <span class="slash colorRed_1">／</span>
+          <span class="slash colorRed_1">/</span>
           <a class="nav-items__li" href="https://www.tsmc-foundation.org/Member/index.aspx" target="_blank">加入<br>心築</a>
         </ul>
       </div>
@@ -97,7 +99,7 @@
           <h1 class="title-main">心築序言</h1>
           <p class="title-category">走進舞台 聆聽她的故事</p>
           <p class="description">過去的一年，因新冠疫情的衝擊，世界停下了腳步；許多藝術表演者的工作，猶如休止符般地，被迫暫停。沒有觀眾的舞台，藝術家的表演失去了意義；進不到舞台的觀眾，心中少了美好的依靠。蟄伏了一年，台積心築藝術季以「她的舞台」為題，在今年度再度展開，透過展覽、演出及講座等系列活動，勾勒出女性藝術家們的群像，引領大眾見證其卓越成就與生命故事...</p>
-          <div class="btn">
+          <div class="btn showPopup">
             <p>完整內容</p>
             <div class="arrow"></div>
           </div>
@@ -105,11 +107,15 @@
       </div>
     </div>
     <div class="preface-img-frame">
-      <div class="preface-img"></div>
+      <div class="preface-img-mask">
+        <div class="preface-img"></div>
+      </div>
       <p class="caption">工研院提供</p>
     </div>
     <!-- 心築觀影錨點 -->
     <div id="video"></div>
+    <!-- 裝飾球 -->
+    <div class="colorDot colorDot_1 bgRed_3"></div>
   </section>
 
   <div class="container">
@@ -120,7 +126,7 @@
   <section class="section section-video">
     <div class="container">
       <div class="video-frame">
-        <div class="video"></div>
+        <div id="yt-video"></div>
         <div class="video-mask">
           <div class="vide-mask__content">
             <h1 class="title-main">心築觀影</h1>
@@ -144,6 +150,10 @@
   <div id="program_1"></div>
   <!-- 節目資訊 Section -->
   <section class="section section-programs">
+    <!-- 裝飾球 -->
+    <div class="colorDot colorDot_2 bgRed_4"></div>
+    <div class="colorDot colorDot_3 bgRed_2"></div>
+    <div class="colorDot colorDot_4 bgRed_1"></div>
     <div class="container">
       <h1 class="title-main">節目資訊</h1>
       <!-- 特別企劃 -->
@@ -179,7 +189,7 @@
             <div class="arrow"></div>
           </div>
         </div>
-        <div class="program">
+        <div class="program last-program">
           <div class="program-img program-img__3"></div>
           <div class="description">
             <div class="program-title">
@@ -215,7 +225,7 @@
             <div class="arrow"></div>
           </div>
         </div>
-        <div class="program">
+        <div class="program last-program">
           <div class="program-img program-img__5"></div>
           <div class="description">
             <div class="program-title">
@@ -251,7 +261,7 @@
             <div class="arrow"></div>
           </div>
         </div>
-        <div class="program">
+        <div class="program last-program">
           <div class="program-img program-img__7"></div>
           <div class="description">
             <div class="program-title">
@@ -287,7 +297,7 @@
             <div class="arrow"></div>
           </div>
         </div>
-        <div class="program">
+        <div class="program last-program">
           <div class="program-img program-img__9"></div>
           <div class="description">
             <div class="program-title">
@@ -348,9 +358,9 @@
                     <span>3/31</span>
                     <span class="event-day">.Wed</span>
                   </div>
-                  <div class="event-time">1900</div>
-                  <div class="event-title">紅樓學者與崑曲藝術家的對話</div>
-                  <div class="event-location">國立中央大學 大講堂</div>
+                  <div class="event-location">國立中央大學 大講堂｜1900</div>
+                  <div class="event-title">紅樓夢崑曲 校園巡演</div>
+                  <div class="event-subtitle">紅樓學者與崑曲藝術家的對話</div>
                 </div>
               </div>
               <div class="event-card">
@@ -370,9 +380,9 @@
                     <span>4/25</span>
                     <span class="event-day">.Sun</span>
                   </div>
-                  <div class="event-time">週二至週日0900-1200、1300-1700，週一休館</div>
-                  <div class="event-title">魏海敏 舞台的故事特展</div>
-                  <div class="event-location">新竹縣政府文化局美術館</div>
+                  <div class="event-location">新竹縣政府文化局美術館｜週二至週日 0900-1200、1300-1700，週一休館</div>
+                  <div class="event-title">魏．來時 / 魏．來路</div>
+                  <div class="event-subtitle">魏海敏 舞台的故事特展</div>
                 </div>
               </div>
               <div class="event-card">
@@ -389,9 +399,9 @@
                     <span>4/14</span>
                     <span class="event-day">.Wed</span>
                   </div>
-                  <div class="event-time">1900</div>
-                  <div class="event-title">紅樓學者與崑曲藝術家的對話</div>
-                  <div class="event-location">國立成功大學 成功廳</div>
+                  <div class="event-location">國立成功大學 成功廳｜1900</div>
+                  <div class="event-title">紅樓夢崑曲 校園巡演</div>
+                  <div class="event-subtitle">紅樓學者與崑曲藝術家的對話</div>
                 </div>
               </div>
             </div>
@@ -411,9 +421,9 @@
                     <span>4/17</span>
                     <span class="event-day">.Sat</span>
                   </div>
-                  <div class="event-time">1930</div>
-                  <div class="event-title">千年舞臺，我卻沒怎麼活過</div>
-                  <div class="event-location">新竹縣政府文化局演藝廳</div>
+                  <div class="event-location">新竹縣政府文化局演藝廳｜1930</div>
+                  <div class="event-title">當代戲劇</div>
+                  <div class="event-subtitle">千年舞臺，我卻沒怎麼活過</div>
                 </div>
               </div>
               <div class="event-card">
@@ -430,9 +440,9 @@
                     <span>4/24</span>
                     <span class="event-day">.Sat</span>
                   </div>
-                  <div class="event-time">1430</div>
+                  <div class="event-location">臺中國家歌劇院 大劇院｜1430</div>
                   <div class="event-title">複眼人</div>
-                  <div class="event-location">臺中國家歌劇院 大劇院</div>
+                  <div class="event-subtitle">劇場版世界首演 改編自吳明益同名小說</div>
                 </div>
               </div>
               <div class="event-card">
@@ -449,9 +459,9 @@
                     <span>4/25</span>
                     <span class="event-day">.Sun</span>
                   </div>
-                  <div class="event-time">1430</div>
+                  <div class="event-location">臺中國家歌劇院 大劇院｜1430</div>
                   <div class="event-title">複眼人</div>
-                  <div class="event-location">臺中國家歌劇院 大劇院</div>
+                  <div class="event-subtitle">劇場版世界首演 改編自吳明益同名小說</div>
                 </div>
               </div>
             </div>
@@ -490,9 +500,9 @@
                     <span>5/14</span>
                     <span class="event-day">.Fri</span>
                   </div>
-                  <div class="event-time">1900</div>
-                  <div class="event-title">天上眾神—人間的投影</div>
-                  <div class="event-location">國立清華大學 合勤演藝廳</div>
+                  <div class="event-location">國立清華大學 合勤演藝廳｜1900</div>
+                  <div class="event-title">天上．人間．古中國的男與女</div>
+                  <div class="event-subtitle">天上眾神—人間的投影</div>
                 </div>
               </div>
               <div class="event-card">
@@ -509,9 +519,9 @@
                     <span>5/15</span>
                     <span class="event-day">.Sat</span>
                   </div>
-                  <div class="event-time">1430</div>
-                  <div class="event-title">紅樓學者與崑曲藝術家的對話</div>
-                  <div class="event-location">國立陽明交通大學 演藝廳</div>
+                  <div class="event-location">國立陽明交通大學 演藝廳｜1430</div>
+                  <div class="event-title">紅樓夢崑曲 校園巡演</div>
+                  <div class="event-subtitle">紅樓學者與崑曲藝術家的對話</div>
                 </div>
               </div>
               <div class="event-card">
@@ -528,9 +538,9 @@
                     <span>5/15</span>
                     <span class="event-day">.Sat</span>
                   </div>
-                  <div class="event-time">1930</div>
-                  <div class="event-title">楊門女將</div>
-                  <div class="event-location">新竹縣政府文化局演藝廳</div>
+                  <div class="event-location">新竹縣政府文化局演藝廳｜1930</div>
+                  <div class="event-title">經典京劇</div>
+                  <div class="event-subtitle">楊門女將</div>
                 </div>
               </div>
             </div>
@@ -550,9 +560,9 @@
                     <span>5/16</span>
                     <span class="event-day">.Sun</span>
                   </div>
-                  <div class="event-time">1400-1600</div>
-                  <div class="event-title">寫作工作坊｜午寐的間隙</div>
-                  <div class="event-location">三餘書店</div>
+                  <div class="event-location">三餘書店｜1400-1600</div>
+                  <div class="event-title">潮味奇女子的文學人生 主題作家：三毛、曹又方</div>
+                  <div class="event-subtitle">寫作工作坊｜午寐的間隙</div>
                 </div>
               </div>
               <div class="event-card">
@@ -569,9 +579,9 @@
                     <span>5/21</span>
                     <span class="event-day">.Fri</span>
                   </div>
-                  <div class="event-time">1900</div>
-                  <div class="event-title">不朽愛情—牛郎和織女</div>
-                  <div class="event-location">國立清華大學 合勤演藝廳</div>
+                  <div class="event-location">國立清華大學 合勤演藝廳｜1900</div>
+                  <div class="event-title">天上．人間．古中國的男與女</div>
+                  <div class="event-subtitle">不朽愛情—牛郎和織女</div>
                 </div>
               </div>
               <div class="event-card">
@@ -588,9 +598,9 @@
                     <span>5/22</span>
                     <span class="event-day">.Sat</span>
                   </div>
-                  <div class="event-time">1430-1600</div>
+                  <div class="event-location">或者 Or Book Store｜1430-1600</div>
                   <div class="event-title">潮味奇女子的文學人生</div>
-                  <div class="event-location">或者 Or Book Store</div>
+                  <div class="event-subtitle">系列活動 主題作家：張愛玲、聶華苓</div>
                 </div>
               </div>
             </div>
@@ -613,9 +623,9 @@
                     <span>5/23</span>
                     <span class="event-day">.Sun</span>
                   </div>
-                  <div class="event-time">1400-1600</div>
-                  <div class="event-title">潮味奇女子的文學人生</div>
-                  <div class="event-location">女書店</div>
+                  <div class="event-location">女書店｜1400-1600</div>
+                  <div class="event-title">潮味奇女子的文學人生 主題作家：蕭紅、羅蘭</div>
+                  <div class="event-subtitle">座談｜來自北方的女子──蕭紅VS羅蘭</div>
                 </div>
               </div>
               <div class="event-card">
@@ -632,9 +642,9 @@
                     <span>5/28</span>
                     <span class="event-day">.Fri</span>
                   </div>
-                  <div class="event-time">1900</div>
+                  <div class="event-location">國立清華大學 合勤演藝廳｜1900</div>
                   <div class="event-title">天上．人間．古中國的男與女</div>
-                  <div class="event-location">國立清華大學 合勤演藝廳</div>
+                  <div class="event-subtitle">全民運動—人人想成仙</div>
                 </div>
               </div>
               <div class="event-card"></div>
@@ -675,9 +685,9 @@
                     <span>6/4</span>
                     <span class="event-day">.Fri</span>
                   </div>
-                  <div class="event-time">1900</div>
-                  <div class="event-title">人間愛恨—七女為父報仇</div>
-                  <div class="event-location">國立清華大學 合勤演藝廳</div>
+                  <div class="event-location">國立清華大學 合勤演藝廳｜1900</div>
+                  <div class="event-title">天上．人間．古中國的男與女</div>
+                  <div class="event-subtitle">人間愛恨—七女為父報仇</div>
                 </div>
               </div>
               <div class="event-card">
@@ -694,9 +704,9 @@
                     <span>6/5</span>
                     <span class="event-day">.Sat</span>
                   </div>
-                  <div class="event-time">1500-1700</div>
-                  <div class="event-title">講座｜課本外的琦君</div>
-                  <div class="event-location">曬書店Ｘ新營市民學堂</div>
+                  <div class="event-location">曬書店Ｘ新營市民學堂｜1500-1700</div>
+                  <div class="event-title">潮味奇女子的文學人生 主題作家：琦君、林海音</div>
+                  <div class="event-subtitle">講座｜課本外的琦君</div>
                 </div>
               </div>
               <div class="event-card">
@@ -713,9 +723,9 @@
                     <span>6/9</span>
                     <span class="event-day">.Wed</span>
                   </div>
-                  <div class="event-time">1930</div>
-                  <div class="event-title">Eric Lu 2021 Piano Recital</div>
-                  <div class="event-location">臺南文化中心演藝廳</div>
+                  <div class="event-location">臺南文化中心演藝廳｜1930</div>
+                  <div class="event-title">陸逸軒2021鋼琴獨奏會</div>
+                  <div class="event-subtitle">Eric Lu 2021 Piano Recital</div>
                 </div>
               </div>
             </div>
@@ -735,9 +745,9 @@
                     <span>6/13</span>
                     <span class="event-day">.Sun</span>
                   </div>
-                  <div class="event-time">1430-1600</div>
-                  <div class="event-title">潮味奇女子的文學人生</div>
-                  <div class="event-location">或者 Or Book Store</div>
+                  <div class="event-location">或者 Or Book Store｜1430-1600</div>
+                  <div class="event-title">潮味奇女子的文學人生 主題作家：張愛玲、聶華苓</div>
+                  <div class="event-subtitle">讀劇｜許小寒的同學會－張愛玲《心經》</div>
                 </div>
               </div>
               <div class="event-card">
@@ -754,9 +764,9 @@
                     <span>6/19</span>
                     <span class="event-day">.Sat</span>
                   </div>
-                  <div class="event-time">1500-1700</div>
-                  <div class="event-title">潮味奇女子的文學人生</div>
-                  <div class="event-location">曬書店Ｘ新營市民學堂</div>
+                  <div class="event-location">曬書店Ｘ新營市民學堂｜1500-1700</div>
+                  <div class="event-title">潮味奇女子的文學人生 主題作家：琦君、林海音</div>
+                  <div class="event-subtitle">記錄片放映暨映後分享｜《兩地》</div>
                 </div>
               </div>
               <div class="event-card">
@@ -773,9 +783,9 @@
                     <span>6/20</span>
                     <span class="event-day">.Sun</span>
                   </div>
-                  <div class="event-time">1500-1630</div>
-                  <div class="event-title">潮味奇女子的文學人生</div>
-                  <div class="event-location">三餘書店</div>
+                  <div class="event-location">三餘書店｜1500-1630</div>
+                  <div class="event-title">潮味奇女子的文學人生 主題作家：三毛、曹又方</div>
+                  <div class="event-subtitle">樂團演出｜你可能沒在聽，我還在講：創作者的日常與性別意識</div>
                 </div>
               </div>
             </div>
@@ -798,9 +808,9 @@
                     <span>6/27</span>
                     <span class="event-day">.Sun</span>
                   </div>
-                  <div class="event-time">1330-1730</div>
-                  <div class="event-title">潮味奇女子的文學人生</div>
-                  <div class="event-location">女書店</div>
+                  <div class="event-location">女書店｜1330-1730</div>
+                  <div class="event-title">潮味奇女子的文學人生 主題作家：蕭紅、羅蘭</div>
+                  <div class="event-subtitle">電影放映暨映後分享｜《黃金年代》</div>
                 </div>
               </div>
               <div class="event-card">
@@ -817,9 +827,9 @@
                     <span>7/2</span>
                     <span class="event-day">.Fri</span>
                   </div>
-                  <div class="event-time">1930</div>
+                  <div class="event-location">新竹市文化局演藝廳｜1930</div>
                   <div class="event-title">NSO馬勒傳奇</div>
-                  <div class="event-location">新竹市文化局演藝廳</div>
+                  <div class="event-subtitle">NSO The Legend of Mahler</div>
                 </div>
               </div>
               <div class="event-card">
@@ -836,9 +846,9 @@
                     <span>7/3</span>
                     <span class="event-day">.Sat</span>
                   </div>
-                  <div class="event-time">1930</div>
+                  <div class="event-location">臺南文化中心演藝廳｜1930</div>
                   <div class="event-title">NSO馬勒傳奇</div>
-                  <div class="event-location">臺南文化中心演藝廳</div>
+                  <div class="event-subtitle">NSO The Legend of Mahler</div>
                 </div>
               </div>
             </div>
@@ -942,6 +952,17 @@
 
   <!-- Copyright -->
   <p class="copyright">台積電心築藝術季 All rights reserved &#x24B8; 2021</p>
+
+  <!-- Popup -->
+  <div class="popup">
+    <div class="container">
+      <div class="popup-frame">
+        <div class="popup-header">
+          <div class="closePopup">&times;</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

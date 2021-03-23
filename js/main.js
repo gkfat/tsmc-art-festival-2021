@@ -100,6 +100,57 @@ $('.june .controller').on('click', function() {
   }
 })
 
+// Play Video function
+let tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+let firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+let player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('yt-video', {
+    height: '100%',
+    width: '100%',
+    videoId: 'mFaJUtAnQDY',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+function onPlayerReady(event) {
+  // event.target.playVideo();
+}
+var done = false;
+function onPlayerStateChange(event) {
+  if ( event.data === YT.PlayerState.PLAYING && !done ) {
+    setTimeout(stopVideo, 6000);
+    done = true;
+  }
+  if ( event.data !== YT.PlayerState.PLAYING ) {
+    $('.video-mask').css('transform', 'translateX(0)')
+  } else {
+    $('.video-mask').css('transform', 'translateX(-100vw)');
+  }
+}
+function stopVideo() {
+  player.stopVideo();
+}
+
+// Video play btn
+$('.section-video .btn').on('click', function() {
+  player.playVideo();
+})
+
+// Popup toggle function
+$('.showPopup').on('click', function() {
+  $('.popup').css('transform', 'translateY(0)');
+  $('body').addClass('stop-scrolling')
+})
+$('.closePopup').on('click', function() {
+  $('.popup').css('transform', 'translateY(100vh)');
+  $('body').removeClass('stop-scrolling')
+})
+
 
 // 初始化
 $(document).ready(() => {

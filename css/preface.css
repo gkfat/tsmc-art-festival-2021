@@ -26,14 +26,23 @@
   top: 0;
   bottom: 0;
   right: 0;
-  padding: 100px 0;
+}
+
+.preface-img-mask {
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+  bottom: 100px;
+  width: 100%;
+  border-radius: 60px 0 0 0;
 }
 
 .preface-img {
   width: 100%;
   height: 100%;
   object-fit: fill;
-  background: url('../assets/preface.png') no-repeat no-repeat center;
+  background: url('../assets/preface.jpg') no-repeat no-repeat center;
+  background-size: 150%;
 }
 
 .caption {

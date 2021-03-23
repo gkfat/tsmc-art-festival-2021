@@ -1,0 +1,42 @@
+
+/* Popup */
+.popup {
+  transform: translateY(100vh);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  background-color: var(--gray);
+  transition: all 0.5s;
+  z-index: 5;
+}
+.popup .container {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+}
+.popup-frame {
+  width: 100%;
+  height: 1500px;
+  background-color: #fff;
+  padding: 50px;
+}
+.popup-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.popup-header .closePopup {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  cursor: pointer;
+  color: var(--gray);
+  transition: all 0.5s;
+}
+.popup-header .closePopup:hover {
+  color: var(--darkGray);
+}

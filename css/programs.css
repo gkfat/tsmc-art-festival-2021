@@ -25,7 +25,7 @@
   transition: all 0.5s;
   cursor: pointer;
 }
-.program:last-child {
+.last-program {
   margin-right: 0;
 }
 
@@ -64,11 +64,13 @@
   transition: all 0.5s;
 }
 .program-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2.4rem;
   color: var(--darkGray);
 }
 .program-info {
+  font-size: 1.2rem;
+  line-height: 2rem;
   color: var(--gray);
 }
 .section-programs .dots .dot {
