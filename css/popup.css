@@ -1,7 +1,7 @@
 
 /* Popup */
 .popup {
-  transform: translateY(100vh);
+  /* transform: translateY(100vh); */
   position: fixed;
   top: 0;
   left: 0;

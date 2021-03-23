@@ -143,17 +143,20 @@ $('.section-video .btn').on('click', function() {
 
 // Popup toggle function
 $('.showPopup').on('click', function() {
-  $('.popup').css('transform', 'translateY(0)');
+  $('.popup').show();
+  // $('.popup').css('transform', 'translateY(0)');
   $('body').addClass('stop-scrolling')
 })
 $('.closePopup').on('click', function() {
-  $('.popup').css('transform', 'translateY(100vh)');
+  $('.popup').hide();
+  // $('.popup').css('transform', 'translateY(100vh)');
   $('body').removeClass('stop-scrolling')
 })
 
 
 // 初始化
 $(document).ready(() => {
+  $('.popup').hide();
   // Header
   $('.section-nav').get(0).style.top = '-120px';
   // 節目場次 Slider
