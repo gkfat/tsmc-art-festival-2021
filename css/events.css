@@ -17,7 +17,7 @@
   height: 100px;
   background-color: var(--brightGray);
   color: var(--gray);
-  border-radius: 50px 0 0 0;
+  border-radius: 60px 0 0 0;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -34,6 +34,17 @@
   height: 120px;
 }
 
+.section-events .active::before {
+  content: '';
+  position: absolute; 
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: var(--gray);
+}
+
 .section-events .active:after {
   content: '';
   position: absolute; 
@@ -45,17 +56,17 @@
 }
 
 .events-nav__li p {
-  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
   font-size: 2.4rem;
   line-height: 3rem;
+  width: auto;
 }
 
 .events-nav__li span {
-  position: absolute;
   font-size: 1rem;
   line-height: 1.8rem;
-  right: -50px;
-  bottom: 0;
 }
 
 /* Events Frame */
@@ -105,12 +116,13 @@
 }
 
 .event-card__body {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   border: 1px solid #fff;
-  padding: 20px;
+  padding: 20px 35px;
   height: 90%;
   color: #fff;
   line-height: 1.8rem;
@@ -121,10 +133,22 @@
   background-color: #fff;
   color: var(--darkGray);
 }
+.event-card__body:hover::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 30px 30px;
+  border-color: transparent transparent var(--darkGray) transparent;
+}
 
 .event-date {
-  font-weight: 800;
-  font-size: 2.4rem;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 .event-date .event-day {
   font-size: 1.2rem;
@@ -134,21 +158,22 @@
   vertical-align: middle;
 }
 .event-location {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .event-title {
-  font-size: 2rem;
-  line-height: 2.4rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
 }
 .event-subtitle {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 /* Slider */
 .slider {
   position: relative;
-  height: 780px;
+  height: 800px;
 }
 .slide {
   position: absolute;

@@ -77,4 +77,5 @@
 }
 .section-preface .btn:hover .arrow {
   background: url('../assets/arrow_white.png') no-repeat no-repeat center;
+  animation: arrowSlide 0.5s;
 }

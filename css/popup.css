@@ -7,28 +7,24 @@
   left: 0;
   right: 0;
   bottom: 0;
+  padding: 100px;
   overflow-y: scroll;
   background-color: var(--gray);
   transition: all 0.5s;
-  z-index: 5;
-}
-.popup .container {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  right: 0;
-  bottom: 100px;
 }
 .popup-frame {
+  position: relative;
   width: 100%;
-  height: 1500px;
   background-color: #fff;
-  padding: 50px;
+  padding: 50px 100px;
+  overflow: hidden;
+  z-index: 3;
 }
 .popup-header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 2;
 }
 .popup-header .closePopup {
   font-size: 3rem;
@@ -39,4 +35,224 @@
 }
 .popup-header .closePopup:hover {
   color: var(--darkGray);
+}
+.popup-body {
+  padding: 100px;
+  z-index: 2;
+}
+
+/* Popup Body */
+.popup-category {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: var(--darkGray);
+}
+.popup-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  line-height: 3rem;
+  margin-bottom: 20px;
+  color: var(--darkGray);
+}
+.popup-subtitle {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin-bottom: 50px;
+  color: var(--gray);
+}
+.popup-img {
+  position: relative;
+  width: 100%;
+  margin: 50px auto;
+  height: 500px;
+  object-fit: cover;
+}
+.popup-content {
+  margin-bottom: 50px;
+  line-height: 2rem;
+}
+.popup-content p {
+  margin-bottom: 30px;
+}
+.lead {
+  font-weight: bold;
+  margin-right: 10px;
+  color: var(--darkGray);
+}
+.popup-info {
+  color: var(--darkGray);
+  line-height: 2.4rem;
+  margin-bottom: 30px;
+}
+.popup-info .date {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.popup-info .date .day {
+  font-size: 1.2rem;
+  margin: 0 5px;
+}
+.popup-info .date .day-to {
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+.popup-link {
+  color: var(--darkGray);
+  line-height: 2.4rem;
+}
+.popup-link .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.popup-link .row span {
+  margin-right: 10px;
+}
+.popup-link a {
+  font-weight: bold;
+  border-bottom: 1px solid var(--gray);
+}
+.popup-link .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+
+/* Popup 裝飾球 */
+.popup-frame .colorDot_1 {
+  position: absolute;
+  top: 20%;
+}
+.popup-frame .flowerDot, .popup-frame .flowerDot_2 {
+  position: absolute;
+  top: 40%;
+  right: -100px;
+  background: url('../assets/flowerDot.png') no-repeat no-repeat center;
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+}
+.popup-frame .colorDot_2 {
+  position: absolute;
+  top: 60%;
+}
+.popup-frame .colorDot_3 {
+  position: absolute;
+  top: 80%;
+}
+/* 心築序言 */
+#popup_0 .popup-img {
+  width: 60%;
+  background: url('../assets/popup-1.jpg') no-repeat no-repeat center;
+  background-size: 100%;
+}
+/* #popup_0 .popup-img:after {
+  content: '工研院提供';
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  letter-spacing: 5px;
+} */
+.popup_0_dots .colorDot_1 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.popup_0_dots .lightDot {
+  position: absolute;
+  top: 20%;
+  right: -125px;
+  background: url('../assets/lightDot.png') no-repeat no-repeat center;
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+}
+.popup-footer {
+  width: 300px;
+  margin-left: auto;
+}
+.popup-footer p {
+  font-size: 1.6rem;
+}
+.signature {
+  background: url('../assets/signature.png') no-repeat no-repeat center;
+  width: 300px;
+  height: 180px;
+  background-size: contain;
+}
+/* 特別企劃 */
+.slogan {
+  font-size: 2rem;
+  font-style: italic;
+}
+#popup_1 .popup-img {
+  background: url('../assets/program-img__1.jpg') no-repeat no-repeat center;
+  background-size: 100%;
+}
+#popup_2 .popup-img {
+  background: url('../assets/program-img__2.jpg') no-repeat no-repeat center;
+  background-size: 100%;
+}
+#popup_3 .NTT-logo {
+  width: 100px;
+  height: 40px;
+}
+#popup_3 .popup-img {
+  background: url('../assets/program-img__3.jpg') no-repeat no-repeat center;
+  background-size: 100%;
+}
+/* 戲曲 */
+#popup_4 .popup-img {
+  background: url('../assets/program-img__4.jpg') no-repeat no-repeat center;
+  background-size: 100%;
+}
+#popup_5 .popup-img {
+  background: url('../assets/program-img__5.jpg') no-repeat no-repeat center;
+  background-size: 100%;
+}
+/* 音樂 */
+#popup_6 .popup-img {
+  background: url('../assets/program-img__6.jpg') no-repeat no-repeat center;
+  background-size: 100%;
+}
+#popup_7 .popup-img {
+  background: url('../assets/program-img__7.jpg') no-repeat no-repeat center;
+  background-size: 100%;
+}
+/* 文史 */
+#popup_8 .popup-img {
+  background: url('../assets/program-img__8.jpg') no-repeat no-repeat center;
+  background-size: 100%;
+}
+#popup_9 .popup-img {
+  background: url('../assets/program-img__9.jpg') no-repeat no-repeat center;
+  background-size: 100%;
+}
+.popup_9_dots .colorDot_1 {
+  top: 6%;
+}
+.popup_9_dots .flowerDot {
+  top: 20%;
+}
+.popup_9_dots .colorDot_2 {
+  top: 30%;
+}
+.popup_9_dots .colorDot_3 {
+  top: 40%;
+}
+.popup_9_dots .colorDot_4 {
+  top: 60%;
+}
+.popup_9_dots .colorDot_5 {
+  top: 70%;
+}
+.popup_9_dots .flowerDot_2 {
+  top: 80%;
 }

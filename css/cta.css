@@ -9,7 +9,7 @@
 .card {
   width: 600px;
   height: 100%;
-  padding: 25px 100px;
+  padding: 40px 100px;
   border: 1px solid var(--darkGray);
   border-radius: 50px 0 0 0;
   color: var(--darkGray);
@@ -21,22 +21,22 @@
   height: 30px;
 }
 .card-title {
-  font-size: 3.6rem;
-  line-height: 4rem;
+  font-size: 2.4rem;
+  line-height: 3rem;
   text-align: center;
 }
 .cta-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 .card-hr {
   height: 1px;
   width: 100%;
   background-color: var(--darkGray);
-  margin: 40px 0;
+  margin: 25px 0;
   transition: all 0.5s;
 }
 
@@ -47,6 +47,7 @@
 }
 .section-cta .card-a:hover .arrow {
   background: url('../assets/arrow_white.png') no-repeat no-repeat center;
+  animation: arrowSlide 0.5s;
 }
 .section-cta .card-a:hover .card-hr {
   background-color: #fff;

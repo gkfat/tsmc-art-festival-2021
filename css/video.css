@@ -53,4 +53,5 @@
 }
 .section-video .btn:hover .arrow {
   background: url('../assets/arrow.png') no-repeat no-repeat center;
+  animation: arrowSlide 0.5s;
 }
