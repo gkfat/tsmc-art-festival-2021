@@ -47,12 +47,6 @@ body {
   margin: 0 auto;
 }
 
-.stop-scrolling {
-  /* height: 100vh; */
-  overflow-y: hidden;
-  position: fixed;
-}
-
 /* Color Class */
 .colorRed_1 {
   color: var(--red_1);

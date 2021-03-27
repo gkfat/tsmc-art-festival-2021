@@ -131,14 +131,17 @@ $('.showPopup').on('click', function() {
   $('.popup').show().scrollTop();
   $(`#${showingPopupId}`).show();
   $(`.${showingPopupId}_dots`).show();
-  $('body').addClass('stop-scrolling');
+  $('body').css('overflow-y', 'hidden');
+  $('html').css('overflow-y', 'hidden');
+  $('.section-nav').css('top', '-120px');
   // 若點到 popup 外就關閉
   $('.popup').on('click', function(e) {
     if ( $('.popup-frame').has(e.target).length === 0 ) {
       $('.popup').hide();
       $(`#${showingPopupId}`).hide();
       $(`.${showingPopupId}_dots`).hide();
-      $('body').removeClass('stop-scrolling')
+      $('body').css('overflow-y', 'scroll');
+      $('html').css('overflow-y', 'scroll');
       $('html').css('scroll-behavior', 'auto');
       window.scrollTo(0, scrollY);
       $('html').css('scroll-behavior', 'smooth');
@@ -149,7 +152,8 @@ $('.closePopup').on('click', function() {
   $('.popup').hide();
   $(`#${showingPopupId}`).hide();
   $(`.${showingPopupId}_dots`).hide();
-  $('body').removeClass('stop-scrolling')
+  $('body').css('overflow-y', 'scroll');
+  $('html').css('overflow-y', 'scroll');
   $('html').css('scroll-behavior', 'auto');
   window.scrollTo(0, scrollY);
   $('html').css('scroll-behavior', 'smooth');
