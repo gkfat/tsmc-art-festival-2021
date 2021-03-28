@@ -66,3 +66,21 @@
   background: url('../assets/arrow.png') no-repeat no-repeat center;
   animation: arrowSlide 0.5s;
 }
+@media screen and (max-width: 992px) {
+  .video-frame {
+    overflow: default;
+    border-radius: 0 0 0 0;
+    height: 500px;
+  }
+  .video-mask {
+    display: none;
+  }
+  .section-video .title-main {
+    color: var(--gray);
+  }
+}
+@media screen and (max-width: 768px) {
+  .video-frame {
+    height: 300px;
+  }
+}

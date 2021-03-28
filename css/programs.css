@@ -44,7 +44,31 @@
 .last-program {
   margin-right: 0;
 }
-
+/* RWD */
+@media screen and (max-width: 1300px) {
+  .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .program {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .row-short {
+    width: 100%;
+  }
+  #program_3, #program_4 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .program {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+}
 /* Program Hover */
 .program:hover .program-dot {
   opacity: 1;

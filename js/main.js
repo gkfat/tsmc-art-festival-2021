@@ -179,6 +179,10 @@ $('.closePopup').on('click', function() {
 
 // 初始化
 $(document).ready(() => {
+  //RWD
+  if ( $( window ).width() < 768 ) {
+    $('.colorDot').hide();
+  }
   // Popup
   $('.popup').hide();
   $('#popup_0').hide();

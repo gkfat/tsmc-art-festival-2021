@@ -1,14 +1,12 @@
 /* 
 ** Events ----------------------------------------
 */
-
 .events-nav__ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   height: 150px;
 }
-
 .events-nav__li {
   display: flex;
   justify-content: center;
@@ -25,7 +23,6 @@
   background-color: var(--gray);
   color: #fff;
 }
-
 .section-events .active {
   position: relative;
   color: #fff;
@@ -33,7 +30,6 @@
   width: 32%;
   height: 120px;
 }
-
 .section-events .active::before {
   content: '';
   position: absolute; 
@@ -44,7 +40,6 @@
   border-radius: 20px;
   background-color: var(--gray);
 }
-
 .section-events .active:after {
   content: '';
   position: absolute; 
@@ -54,7 +49,6 @@
   height: 1px;
   background-color: #fff;
 }
-
 .events-nav__li p {
   display: flex;
   justify-content: flex-start;
@@ -63,7 +57,6 @@
   line-height: 3rem;
   width: auto;
 }
-
 .events-nav__li span {
   font-size: 1rem;
   line-height: 1.8rem;
@@ -76,13 +69,6 @@
   padding: 60px 0;
   background-color: var(--gray);
 }
-.events-frame .row {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  margin-bottom: 80px;
-}
 .section-events .dots .dot {
   width: 30px;
   height: 20px;
@@ -93,15 +79,18 @@
 /* Event Card */
 .event-card {
   width: 30%;
-  align-self: stretch;
+  min-height: 240px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
-
 .event-card__header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
 .area {
   display: flex;
   justify-content: center;
@@ -114,16 +103,11 @@
   font-size: 1.6rem;
   color: var(--darkGray);
 }
-
 .event-card__body {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   border: 1px solid #fff;
+  flex-grow: 1;
   padding: 20px 35px;
-  height: 90%;
   color: #fff;
   line-height: 1.8rem;
   cursor: pointer;
@@ -173,8 +157,9 @@
 /* Slider */
 .slider {
   position: relative;
-  height: 800px;
+  height: 750px;
 }
+
 .slide {
   position: absolute;
   left: 0;
@@ -182,6 +167,10 @@
   right: 0;
   bottom: 0;
   transition: all 0.5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 .may-page2, .june-page2 {
   transform: translateX(100vw);
@@ -223,4 +212,53 @@
 .disabled:hover {
   background-color: var(--brightGray);
   color: var(--gray);
+}
+
+/* RWD */
+@media screen and (max-width: 1280px) {
+  .slider {
+    height: 1000px;
+  }
+  .event-card {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .event-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .section-events .active {
+    height: 100px;
+  }
+  .events-nav__li {
+    flex-wrap: wrap;
+    height: 80px;
+  }
+  .events-nav__li p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .events-nav__li span {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .events-frame {
+    padding: 30px 0;
+  }
+  .slider {
+    height: 400px;
+    overflow-y: scroll;
+  }
+  .event-card__body {
+    padding: 10px;
+  }
+  .event-date, .event-location {
+    margin: 0;
+  }
+  .controllers {
+    justify-content: space-between;
+    margin: 20px 0;
+  }
 }
