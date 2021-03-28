@@ -8,14 +8,26 @@
   border: 1px solid #fff;
   color: #fff;
 }
+.video-container {
+  position: relative;
+}
 .video-frame {
+  position: relative;
   width: 100%;
   height: 700px;
-  position: relative;
+  border-radius: 60px 0 0 0; 
   overflow: hidden;
-  border-radius: 50px 0 0 0; 
 }
-
+.section-video .video-container:hover::after {
+  content: '';
+  position: absolute; 
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: var(--darkGray);
+}
 .video-mask {
   display: flex;
   justify-content: center;
@@ -28,7 +40,6 @@
   background-color: var(--gray);
   transition: all 0.5s;
 }
-
 
 /* 按鈕 */
 .section-video .btn {

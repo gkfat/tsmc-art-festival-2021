@@ -193,45 +193,34 @@
   align-items: center;
   margin-bottom: 0;
 }
-.controller {
-  position: relative;
+.control {
   width: 80px;
   height: 80px;
-  border: 1px solid #fff;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
+  font-size: 2rem;
   margin-right: 20px;
+  border: 1px solid var(--brightGray);
   cursor: pointer;
   transition: all 0.5s;
 }
-.controller:hover {
+.control:hover {
   background-color: #fff;
-}
-.controller:hover .control-prev {
-  border-color: transparent var(--gray) transparent transparent;
-}
-.controller:hover .control-next {
-  border-color: transparent transparent transparent var(--gray);
-}
-.control {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  transition: all 0.5s;
-}
-.control-prev {
-  border-width: 15px 25px 15px 0;
-  border-color: transparent #fff transparent transparent;
-}
-.control-next {
-  border-width: 15px 0 15px 25px;
-  border-color: transparent transparent transparent#fff;
+  color: var(--gray);
 }
 .page {
   font-size: 1.4rem;
   line-height: 2rem;
   letter-spacing: 3px;
   color: #fff;
+}
+.disabled {
+  background-color: var(--brightGray);
+  color: var(--gray);
+  cursor: default;
+}
+.disabled:hover {
+  background-color: var(--brightGray);
+  color: var(--gray);
 }

@@ -63,6 +63,9 @@ body {
 .colorDark {
   color: var(--dark);
 }
+.colorGray {
+  color: var(--gray);
+}
 .bgGray_1 {
   background-color: var(--darkGray);
 }
@@ -141,6 +144,11 @@ body {
   background-color: var(--lightGray);
 }
 
+/* 日期斜線 */
+.date-slash {
+  font-size: 0.8rem;
+}
+
 /* 標題 */
 .title-main {
   font-size: 4.2rem;
@@ -203,12 +211,11 @@ body {
 /* Copyright */
 .copyright {
   padding: 60px 0;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
   text-align: center;
   color: var(--darkGray);
 }
-
 
 /* Animations */
 @keyframes arrowSlide {

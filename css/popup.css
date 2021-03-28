@@ -43,7 +43,7 @@
 
 /* Popup Body */
 .popup-category {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 2.4rem;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -147,6 +147,12 @@
   position: absolute;
   top: 80%;
 }
+.popup-frame .dots .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 10px; 
+}
 /* 心築序言 */
 #popup_0 .popup-img {
   width: 60%;
@@ -193,11 +199,11 @@
   font-style: italic;
 }
 #popup_1 .popup-img {
-  background: url('../assets/program-img__1.jpg') no-repeat no-repeat center;
+  background: url('../assets/popup-img__1.jpg') no-repeat no-repeat center;
   background-size: 100%;
 }
 #popup_2 .popup-img {
-  background: url('../assets/program-img__2.jpg') no-repeat no-repeat center;
+  background: url('../assets/popup-img__2.jpg') no-repeat no-repeat center;
   background-size: 100%;
 }
 #popup_3 .NTT-logo {
@@ -205,34 +211,39 @@
   height: 40px;
 }
 #popup_3 .popup-img {
-  background: url('../assets/program-img__3.jpg') no-repeat no-repeat center;
+  background: url('../assets/popup-img__3.jpg') no-repeat no-repeat center;
   background-size: 100%;
+}
+#popup_3 .popup-img-2 {
+  background: url('../assets/popup-img__3-2.png') no-repeat no-repeat center;
+  height: 700px;
+  background-size: contain;
 }
 /* 戲曲 */
 #popup_4 .popup-img {
-  background: url('../assets/program-img__4.jpg') no-repeat no-repeat center;
+  background: url('../assets/popup-img__4.jpg') no-repeat no-repeat center;
   background-size: 100%;
 }
 #popup_5 .popup-img {
-  background: url('../assets/program-img__5.jpg') no-repeat no-repeat center;
+  background: url('../assets/popup-img__5.jpg') no-repeat no-repeat center;
   background-size: 100%;
 }
 /* 音樂 */
 #popup_6 .popup-img {
-  background: url('../assets/program-img__6.jpg') no-repeat no-repeat center;
+  background: url('../assets/popup-img__6.jpg') no-repeat no-repeat center;
   background-size: 100%;
 }
 #popup_7 .popup-img {
-  background: url('../assets/program-img__7.jpg') no-repeat no-repeat center;
+  background: url('../assets/popup-img__7.jpg') no-repeat no-repeat center;
   background-size: 100%;
 }
 /* 文史 */
 #popup_8 .popup-img {
-  background: url('../assets/program-img__8.jpg') no-repeat no-repeat center;
+  background: url('../assets/popup-img__8.jpg') no-repeat no-repeat center;
   background-size: 100%;
 }
 #popup_9 .popup-img {
-  background: url('../assets/program-img__9.jpg') no-repeat no-repeat center;
+  background: url('../assets/popup-img__9.jpg') no-repeat no-repeat center;
   background-size: 100%;
 }
 .popup_9_dots .colorDot_1 {

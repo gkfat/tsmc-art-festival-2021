@@ -27,6 +27,16 @@
   bottom: 0;
   right: 0;
 }
+.preface-img-frame:hover::after {
+  content: '';
+  position: absolute; 
+  left: 0;
+  top: 100px;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: var(--darkGray);
+}
 
 .preface-img-mask {
   overflow: hidden;
@@ -49,7 +59,7 @@
   position: absolute;
   right: 30px;
   bottom: 150px;
-  color: #fff;
+  color: var(--darkGray);
   letter-spacing: 5px;
 }
 
