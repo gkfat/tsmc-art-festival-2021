@@ -26,6 +26,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-left: auto;
 }
 .nav-items__li {
   display: inline-block;
@@ -89,4 +90,17 @@
   border-top: 1px solid var(--gray);
   border-bottom: 1px solid var(--gray);
   height: 70px;
+}
+
+/* RWD */
+@media screen and (max-width: 1200px) {
+  .section-nav .container {
+    width: 90%;
+  }
+  .nav-items__li {
+    padding: 30px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+
 }

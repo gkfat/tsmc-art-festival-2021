@@ -1,31 +1,36 @@
 /* 
 ** Footer ----------------------------------------
 */
-
+.section-footer {
+  background-color:var(--darkGray);
+  padding: 60px 0;
+}
 .footer-title {
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
   color: #fff;
 }
 .section-footer .dots {
   margin-bottom: 10px;
 }
 .section-footer .dots .dot {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 10px;
-  margin-right: 10px; 
+  margin: 0 5px 0 0; 
 }
 .tsmc-logo {
   display: inline-block;
   background: url('../assets/tsmc-logo.png') no-repeat no-repeat center;
-  width: 300px;
-  height: 70px;
+  width: 250px;
+  height: 60px;
+  background-size: contain;
   margin-bottom: 20px;
 }
 
 .assistants .assistant-logo {
   color: #fff;
+  font-size: 0.9rem;
+  font-weight: 100;
 }
 .assistants .assistant-logo:hover {
   color: var(--lightGray);

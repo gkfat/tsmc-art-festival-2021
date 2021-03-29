@@ -26,8 +26,10 @@
   z-index: 2;
 }
 .popup-header .closePopup {
+  position: absolute;
+  top: 30px;
+  right: 50px;
   font-size: 3rem;
-  line-height: 3.2rem;
   cursor: pointer;
   color: var(--gray);
   transition: all 0.5s;
@@ -36,42 +38,37 @@
   color: var(--darkGray);
 }
 .popup-body {
-  padding: 100px;
+  padding: 30px 100px;
   z-index: 2;
 }
 
 /* Popup Body */
 .popup-category {
-  font-size: 2rem;
-  line-height: 2.4rem;
+  font-size: 1.6rem;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: var(--darkGray);
 }
 .popup-title {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: bold;
   letter-spacing: 5px;
-  line-height: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: var(--darkGray);
 }
 .popup-subtitle {
   font-size: 2rem;
-  line-height: 2.4rem;
-  margin-bottom: 50px;
   color: var(--gray);
 }
 .popup-img {
   position: relative;
   width: 100%;
-  margin: 50px auto;
+  margin: 30px auto;
   height: 500px;
   object-fit: cover;
 }
 .popup-content {
   margin-bottom: 50px;
-  line-height: 2rem;
 }
 .popup-content p {
   margin-bottom: 30px;
@@ -83,7 +80,6 @@
 }
 .popup-info {
   color: var(--darkGray);
-  line-height: 2.4rem;
   margin-bottom: 30px;
 }
 .popup-info .date {
@@ -100,7 +96,6 @@
 }
 .popup-link {
   color: var(--darkGray);
-  line-height: 2.4rem;
 }
 .popup-link .row {
   display: flex;
@@ -158,14 +153,6 @@
   background: url('../assets/popup-1.jpg') no-repeat no-repeat center;
   background-size: 100%;
 }
-/* #popup_0 .popup-img:after {
-  content: '工研院提供';
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  color: #fff;
-  letter-spacing: 5px;
-} */
 .popup_0_dots .colorDot_1 {
   top: 50%;
   transform: translateY(-50%);
@@ -194,7 +181,7 @@
 }
 /* 特別企劃 */
 .slogan {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-style: italic;
 }
 #popup_1 .popup-img {
@@ -268,7 +255,7 @@
 }
 
 /* RWD */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   .popup {
     padding: 30px;
   }
@@ -277,6 +264,23 @@
   }
   .popup-body {
     padding: 30px 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .popup-header .closePopup {
+    font-size: 2.4rem;
+  }
+  .popup-category {
+    font-size: 1.2rem;
+  }
+  .popup-title {
+    font-size: 2rem;
+  }
+  .popup-subtitle {
+    font-size: 1.6rem;
+  }
+  .popup-img {
+    margin: 10px auto;
   }
 }
 @media screen and (max-width: 768px) {

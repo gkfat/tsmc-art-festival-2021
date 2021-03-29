@@ -5,16 +5,24 @@
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
-  if ( currentScrollPos > 200 ) { // 超過 KV
-    if ( currentScrollPos > $('#preface').get(0).offsetTop && currentScrollPos > prevScrollpos ) { // 往下滑隱藏
-      $('.section-nav').css('top', '-120px');
-    } else { // 往上滑
-      $('.section-nav').css('top', '0');
+  if ( $( window ).width() > 768 ) {
+    if ( currentScrollPos > 200 ) { // 超過 KV
+      if ( currentScrollPos > $('#preface').get(0).offsetTop && currentScrollPos > prevScrollpos ) { // 往下滑隱藏
+        $('.section-nav').css('top', '-160px');
+      } else { // 往上滑
+        $('.section-nav').css('top', '0');
+      }
+    } else {
+      $('.section-nav').css('top', '-160px');
     }
+    prevScrollpos = currentScrollPos;
   } else {
-    $('.section-nav').css('top', '-120px');
+    if ( currentScrollPos > 200 ) {
+      $('.section-nav').css('top', '0');
+    } else {
+      $('.section-nav').css('top', '-160px');
+    }
   }
-  prevScrollpos = currentScrollPos;
 }
 
 // Header Nav click function
@@ -123,11 +131,6 @@ function onPlayerStateChange(event) {
   if ( event.data === YT.PlayerState.PLAYING ) {
     $('.video-mask').css('transform', 'translateX(-100vw)');
   }
-  // if ( event.data !== YT.PlayerState.PLAYING ) {
-  //   $('.video-mask').css('transform', 'translateX(0)')
-  // } else {
-  //   $('.video-mask').css('transform', 'translateX(-100vw)');
-  // }
 }
 function stopVideo() {
   player.stopVideo();
@@ -183,6 +186,8 @@ $(document).ready(() => {
   if ( $( window ).width() < 768 ) {
     $('.colorDot').hide();
   }
+  // Header
+  $('.section-nav').get(0).style.top = '-160px';
   // Popup
   $('.popup').hide();
   $('#popup_0').hide();
@@ -205,8 +210,6 @@ $(document).ready(() => {
   $('.popup_7_dots').hide();
   $('.popup_8_dots').hide();
   $('.popup_9_dots').hide();
-  // Header
-  $('.section-nav').get(0).style.top = '-120px';
   // 節目場次 Slider
   $('.events-frame .container').hide();
   $('.april').show();

@@ -6,14 +6,17 @@
 }
 .section-preface .container {
   position: relative;
+  margin-top: 80px;
 }
 .preface-intro {
   width: 40%;
-  padding: 100px 0;
+  height: 450px;
+  padding: 10px 0;
+  /* transform: translateY(25%); */
 }
 .description {
-  line-height: 1.8rem;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+  color: var(--dark);
 }
 .preface-img-frame {
   height: 100%;
@@ -23,50 +26,36 @@
   bottom: 0;
   right: 0;
 }
+.preface-img-mask {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  height: 450px;
+  width: 100%;
+  border-radius: 60px 0 0 0;
+}
 .preface-img-frame:hover::after {
   content: '';
   position: absolute; 
   left: 0;
-  top: 100px;
+  top: 0;
   width: 15px;
   height: 15px;
   border-radius: 20px;
   background-color: var(--darkGray);
 }
-.preface-img-mask {
-  overflow: hidden;
-  position: absolute;
-  top: 100px;
-  bottom: 100px;
-  width: 100%;
-  border-radius: 60px 0 0 0;
-}
-@media screen and (max-width: 992px) {
-  .preface-intro {
-    width: 100%;
-    padding: 30px 0;
-  }
-  .preface-img-frame {
-    width: 100%;
-    position: static;
-  }
-  .preface-img-mask {
-    position: static;
-    height: 300px;
-  }
-}
 .preface-img {
   width: 100%;
   height: 100%;
   object-fit: fill;
-  background: url('../assets/preface.jpg') no-repeat no-repeat center;
+  background: url('../assets/preface.jpg') no-repeat no-repeat top;
+  background-position-y: 15%;
   background-size: 150%;
 }
-
 .caption {
   position: absolute;
   right: 30px;
-  bottom: 150px;
+  bottom: 30px;
   color: var(--darkGray);
   letter-spacing: 5px;
 }
@@ -76,8 +65,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 300px;
-  padding: 15px 30px;
+  width: 240px;
+  padding: 10px 20px;
   border: 1px solid var(--darkGray);
   cursor: pointer;
   color: var(--darkGray);
@@ -96,4 +85,41 @@
 .section-preface .btn:hover .arrow {
   background: url('../assets/arrow_white.png') no-repeat no-repeat center;
   animation: arrowSlide 0.5s;
+}
+
+/* RWD */
+@media screen and (max-width: 1280px) {
+  .preface-intro {
+    width: 40%;
+    height: 65%;
+    padding: 10px 0;
+  }
+  .preface-img-mask {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section-preface .title-category {
+    text-align: center;
+  }
+  .description {
+    width: 500px;
+    margin: 0 auto 30px;
+  }
+  .preface-intro {
+    width: 100%;
+    padding: 30px 0;
+  }
+  .preface-img-frame {
+    display: none;
+  }
+  .section-preface .btn {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  .description {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
 }

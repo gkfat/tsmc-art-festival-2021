@@ -1,6 +1,9 @@
 /* 
 ** CTA ----------------------------------------
 */
+.section-cta {
+  margin-top: 80px;
+}
 .cards-frame {
   display: flex;
   justify-content: space-between;
@@ -8,9 +11,9 @@
 }
 .card {
   position: relative;
-  width: 600px;
+  width: 45%;
   height: 100%;
-  padding: 40px 100px;
+  padding: 20px 50px;
   border: 1px solid var(--darkGray);
   border-radius: 60px 0 0 0;
   color: var(--darkGray);
@@ -26,23 +29,20 @@
   border-radius: 20px;
   background-color: var(--darkGray);
 }
-
 .section-cta .arrow {
   background: url('../assets/arrow.png') no-repeat no-repeat center;
   width: 120px;
   height: 30px;
 }
 .card-title {
-  font-size: 2.4rem;
-  line-height: 3rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 .cta-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 1rem;
 }
 .card-hr {
   height: 1px;
@@ -53,31 +53,30 @@
 }
 
 /* Card Hover */
-.section-cta .card-a:hover .card {
+.section-cta .card:link, .section-cta .card:visited {
+  color: var(--darkGray);
+}
+
+.section-cta .card:hover {
   background-color: var(--darkGray);
   color: #fff;
 }
-.section-cta .card-a:hover .arrow {
+.section-cta .card:hover .arrow {
   background: url('../assets/arrow_white.png') no-repeat no-repeat center;
   animation: arrowSlide 0.5s;
 }
-.section-cta .card-a:hover .card-hr {
+.section-cta .card:hover .card-hr {
   background-color: #fff;
 }
 
 /* Go top */
-.go-top-frame {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
 .go-top {
   position: relative;
-  width: 80px;
-  height: 80px;
+  margin-top: 30px;
+  width: 60px;
+  height: 60px;
   margin-left: auto;
-  background-color: var(--lightGray);
+  background-color: var(--brightGray);
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -96,29 +95,23 @@
   border-color: transparent transparent #fff transparent;
 }
 /* RWD */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   .card {
-    width: 430px;
-    padding: 20px 60px;
+    padding: 10px 30px;
   }
   .card-title {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 992px) {
+  .section-cta {
+    margin-top: 50px;
+  }
   .cards-frame {
     flex-wrap: wrap;
   }
-  .card-a, .card {
-    width: 100%;
-  }
-  .card-a {
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
   .card {
-    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
