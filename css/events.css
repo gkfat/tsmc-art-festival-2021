@@ -208,6 +208,20 @@
   color: var(--brightGray);
 }
 
+
+/* Mobile */
+.mobile-events {
+  display: none;
+}
+.mobile-events .title-category {
+  color: #fff;
+  margin: 20px 0;
+}
+.mobile-events span {
+  font-size: 1rem;
+}
+
+
 /* RWD */
 @media screen and (max-width: 1200px) {
   .slider {
@@ -220,9 +234,15 @@
     width: 340px;
   }
 }
-@media screen and (max-width: 900px) {
-  .slider {
-    height: 1400px;
+@media screen and (max-width: 992px) {
+  .events-nav, .events-desktop {
+    display: none;
+  }
+  .mobile-events {
+    display: block;
+  }
+  .events-frame {
+    height: auto;
   }
   .events-nav__li {
     width: 33%;

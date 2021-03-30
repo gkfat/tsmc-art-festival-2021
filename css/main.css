@@ -39,10 +39,9 @@ body {
 .section {
   position: relative;
   width: 100vw;
-  /* min-height: 100vh; */
 }
 .container {
-  width: 70%;
+  width: 950px;
   margin: 0 auto;
 }
 .rwd-show {
@@ -214,7 +213,7 @@ body {
 }
 
 /* RWD */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1100px) {
   .hr {
     margin: 50px 0;
   }
@@ -223,6 +222,11 @@ body {
   }
   .rwd-show {
     display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  .title-main {
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {

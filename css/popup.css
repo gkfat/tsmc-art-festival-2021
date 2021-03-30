@@ -307,6 +307,7 @@
   }
   .popup-img {
     margin: 20px auto;
-    height: 200px;
+    height: 250px;
+    background-size: contain;
   }
 }
