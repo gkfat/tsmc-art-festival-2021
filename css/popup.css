@@ -232,6 +232,18 @@
   background: url('../assets/popup-img__9.jpg') no-repeat no-repeat center;
   background-size: 100%;
 }
+#popup_9 .hr {
+  margin: 30px 0;
+}
+#popup_9 .popup-info a {
+  font-size: 1.2rem;
+  color: var(--darkGray);
+  border-bottom: 1px solid var(--darkGray);
+}
+#popup_9 .popup-info a:hover {
+  color: var(--gray);
+  border-bottom: 1px solid var(--gray);
+}
 .popup_9_dots .colorDot_1 {
   top: 6%;
 }
