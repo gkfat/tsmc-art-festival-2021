@@ -47,6 +47,9 @@ body {
 .rwd-show {
   display: none;
 }
+.initial-hidden {
+  display: none;
+}
 
 /* Color Class */
 .colorRed_1 {

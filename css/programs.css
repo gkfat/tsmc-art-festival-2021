@@ -175,6 +175,9 @@
     width: 47%;
     height: 300px;
   }
+  .program-img__7 {
+    background-position-y: center;
+  }
 }
 
 @media screen and (max-width: 680px) {

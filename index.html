@@ -22,17 +22,17 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2R252JYKP"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2R252JYKP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-T2R252JYKP');
-  </script> -->
+  </script>
 </head>
 <body>
   <!-- Nav Section -->
-  <section class="section-nav">
+  <section class="section-nav initial-hidden">
     <!-- 桌機版 Menu -->
     <div class="container menu-desktop">
       <div class="nav-items">
@@ -179,10 +179,10 @@
   <!-- KV Section -->
   <section id="kv" class="section section-kv">
     <div class="kv">
-      <video class="kv-video kv-desktop" muted autoplay>
+      <video playsinline class="kv-video kv-desktop" muted autoplay>
         <source src="assets/kv.mp4" type="video/mp4">
       </video>
-      <video class="kv-video kv-mobile" muted autoplay>
+      <video playsinline class="kv-video kv-mobile" muted autoplay>
         <source src="assets/Mobile.mp4" type="video/mp4">
       </video>
     </div>
@@ -457,11 +457,11 @@
 
   <!-- 節目場次 Section -->
   <section class="section section-events">
+    <!-- 4 月錨點 -->
+    <div id="mobile_april"></div>
     <div class="container">
-      <!-- 4 月錨點 -->
-      <div id="mobile_april"></div>
       <h1 class="title-main">節目場次</h1>
-      <div class="events-nav">
+      <div class="events-nav events-nav-desktop">
         <ul class="events-nav__ul">
           <li id="april" class="events-nav__li active">
             <p>3月<span>MARCH</span></p>
@@ -1030,518 +1030,548 @@
     </div>
 
     <!-- Mobile 全部展開 -->
-    <div class="mobile-events events-frame">
-      <div class="container">
-        <!-- 4 月 -->
-        <div class="title-category">
-          <p>3月<span>MARCH</span>｜4月<span>APRIL</span></p>
+    <div class="mobile-events">
+      <!-- Mobile 4 月 -->
+      <div class="events-nav">
+        <div class="container">
+          <ul class="events-nav__ul">
+            <li class="events-nav__li active">
+              <p>3月<span>MARCH</span></p>
+              <p>｜4月<span>APRIL</span></p>
+            </li>
+          </ul>
         </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">戲曲</p>
+      </div>
+      <div class="events-frame">
+        <div class="container">
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">戲曲</p>
+              </div>
+              <div class="area">桃園</div>
             </div>
-            <div class="area">桃園</div>
+            <div class="event-card__body showPopup popup_4">
+              <div class="event-date">
+                <span>3</span>
+                <span class="date-slash">/</span>
+                <span>31</span>
+                <span class="event-day">.wed</span>
+              </div>
+              <div class="event-location">國立中央大學 大講堂<br>19:00</div>
+              <div class="event-title">紅樓夢崑曲 校園巡演</div>
+              <div class="event-subtitle">紅樓學者與崑曲藝術家的對話</div>
+            </div>
           </div>
-          <div class="event-card__body showPopup popup_4">
-            <div class="event-date">
-              <span>3</span>
-              <span class="date-slash">/</span>
-              <span>31</span>
-              <span class="event-day">.wed</span>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">特別企劃</p>
+              </div>
+              <div class="area">新竹</div>
             </div>
-            <div class="event-location">國立中央大學 大講堂<br>19:00</div>
-            <div class="event-title">紅樓夢崑曲 校園巡演</div>
-            <div class="event-subtitle">紅樓學者與崑曲藝術家的對話</div>
+            <div class="event-card__body showPopup popup_2">
+              <div class="event-date">
+                <span>4</span>
+                <span class="date-slash">/</span>
+                <span>01</span>
+                <span class="event-day">.thu</span>
+                <span class="day-to">&#x25B6;</span>
+                <span>4</span>
+                <span class="date-slash">/</span>
+                <span>25</span>
+                <span class="event-day">.sun</span>
+              </div>
+              <div class="event-location">
+                新竹縣政府文化局美術館<br>
+                週二至週日 09:00-12:00、13:00-17:00 每週一休館<br>
+                ＊清明假期 4/03-4/05 休館
+              </div>
+              <div class="event-title">魏．來時／魏．來路</div>
+              <div class="event-subtitle">魏海敏 舞台的故事特展</div>
+            </div>
           </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">特別企劃</p>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">戲曲</p>
+              </div>
+              <div class="area">台南</div>
             </div>
-            <div class="area">新竹</div>
+            <div class="event-card__body showPopup popup_4">
+              <div class="event-date">
+                <span>4</span>
+                <span class="date-slash">/</span>
+                <span>14</span>
+                <span class="event-day">.wed</span>
+              </div>
+              <div class="event-location">國立成功大學 成功廳<br>19:00</div>
+              <div class="event-title">紅樓夢崑曲 校園巡演</div>
+              <div class="event-subtitle">紅樓學者與崑曲藝術家的對話</div>
+            </div>
           </div>
-          <div class="event-card__body showPopup popup_2">
-            <div class="event-date">
-              <span>4</span>
-              <span class="date-slash">/</span>
-              <span>01</span>
-              <span class="event-day">.thu</span>
-              <span class="day-to">&#x25B6;</span>
-              <span>4</span>
-              <span class="date-slash">/</span>
-              <span>25</span>
-              <span class="event-day">.sun</span>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">特別企劃</p>
+              </div>
+              <div class="area">新竹</div>
             </div>
-            <div class="event-location">
-              新竹縣政府文化局美術館<br>
-              週二至週日 09:00-12:00、13:00-17:00 每週一休館<br>
-              ＊清明假期 4/03-4/05 休館
+            <div class="event-card__body showPopup popup_1">
+              <div class="event-date">
+                <span>4</span>
+                <span class="date-slash">/</span>
+                <span>17</span>
+                <span class="event-day">.sat</span>
+              </div>
+              <div class="event-location">新竹縣政府文化局演藝廳<br>19:30</div>
+              <div class="event-title">千年舞臺，我卻沒怎麼活過</div>
+              <div class="event-subtitle">當代戲劇</div>
             </div>
-            <div class="event-title">魏．來時／魏．來路</div>
-            <div class="event-subtitle">魏海敏 舞台的故事特展</div>
           </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">戲曲</p>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">特別企劃</p>
+              </div>
+              <div class="area">台中</div>
             </div>
-            <div class="area">台南</div>
+            <div class="event-card__body showPopup popup_3">
+              <div class="event-date">
+                <span>4</span>
+                <span class="date-slash">/</span>
+                <span>24</span>
+                <span class="event-day">.sat</span>
+              </div>
+              <div class="event-location">臺中國家歌劇院 大劇院<br>14:30</div>
+              <div class="event-title">複眼人<span class="NTT-logo"></span></div>
+              <div class="event-subtitle">劇場版世界首演 改編自吳明益同名小說</div>
+            </div>
           </div>
-          <div class="event-card__body showPopup popup_4">
-            <div class="event-date">
-              <span>4</span>
-              <span class="date-slash">/</span>
-              <span>14</span>
-              <span class="event-day">.wed</span>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">特別企劃</p>
+              </div>
+              <div class="area">台中</div>
             </div>
-            <div class="event-location">國立成功大學 成功廳<br>19:00</div>
-            <div class="event-title">紅樓夢崑曲 校園巡演</div>
-            <div class="event-subtitle">紅樓學者與崑曲藝術家的對話</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">特別企劃</p>
+            <div class="event-card__body showPopup popup_3">
+              <div class="event-date">
+                <span>4</span>
+                <span class="date-slash">/</span>
+                <span>25</span>
+                <span class="event-day">.sun</span>
+              </div>
+              <div class="event-location">臺中國家歌劇院 大劇院<br>14:30</div>
+              <div class="event-title">複眼人<span class="NTT-logo"></span></div>
+              <div class="event-subtitle">劇場版世界首演<br>改編自吳明益同名小說</div>
             </div>
-            <div class="area">新竹</div>
-          </div>
-          <div class="event-card__body showPopup popup_1">
-            <div class="event-date">
-              <span>4</span>
-              <span class="date-slash">/</span>
-              <span>17</span>
-              <span class="event-day">.sat</span>
-            </div>
-            <div class="event-location">新竹縣政府文化局演藝廳<br>19:30</div>
-            <div class="event-title">千年舞臺，我卻沒怎麼活過</div>
-            <div class="event-subtitle">當代戲劇</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">特別企劃</p>
-            </div>
-            <div class="area">台中</div>
-          </div>
-          <div class="event-card__body showPopup popup_3">
-            <div class="event-date">
-              <span>4</span>
-              <span class="date-slash">/</span>
-              <span>24</span>
-              <span class="event-day">.sat</span>
-            </div>
-            <div class="event-location">臺中國家歌劇院 大劇院<br>14:30</div>
-            <div class="event-title">複眼人<span class="NTT-logo"></span></div>
-            <div class="event-subtitle">劇場版世界首演 改編自吳明益同名小說</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">特別企劃</p>
-            </div>
-            <div class="area">台中</div>
           </div>
           <!-- 5 月錨點 -->
           <div id="mobile_may"></div>
-          <div class="event-card__body showPopup popup_3">
-            <div class="event-date">
-              <span>4</span>
-              <span class="date-slash">/</span>
-              <span>25</span>
-              <span class="event-day">.sun</span>
-            </div>
-            <div class="event-location">臺中國家歌劇院 大劇院<br>14:30</div>
-            <div class="event-title">複眼人<span class="NTT-logo"></span></div>
-            <div class="event-subtitle">劇場版世界首演<br>改編自吳明益同名小說</div>
-          </div>
         </div>
-    
-        <!-- 5 月 -->
-        <div class="title-category">
-          <p>5月<span>MAY</span></p>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
-            </div>
-            <div class="area">新竹</div>
-          </div>
-          <div class="event-card__body showPopup popup_8">
-            <div class="event-date">
-              <span>5</span>
-              <span class="date-slash">/</span>
-              <span>14</span>
-              <span class="event-day">.fri</span>
-            </div>
-            <div class="event-location">國立清華大學 合勤演藝廳<br>19:00</div>
-            <div class="event-title">天上．人間．古中國的男與女</div>
-            <div class="event-subtitle">天上眾神—人間的投影</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">戲曲</p>
-            </div>
-            <div class="area">新竹</div>
-          </div>
-          <div class="event-card__body showPopup popup_4">
-            <div class="event-date">
-              <span>5</span>
-              <span class="date-slash">/</span>
-              <span>15</span>
-              <span class="event-day">.sat</span>
-            </div>
-            <div class="event-location">國立陽明交通大學 演藝廳<br>14:30</div>
-            <div class="event-title">紅樓夢崑曲 校園巡演</div>
-            <div class="event-subtitle">紅樓學者與崑曲藝術家的對話</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">戲曲</p>
-            </div>
-            <div class="area">新竹</div>
-          </div>
-          <div class="event-card__body showPopup popup_5">
-            <div class="event-date">
-              <span>5</span>
-              <span class="date-slash">/</span>
-              <span>15</span>
-              <span class="event-day">.sat</span>
-            </div>
-            <div class="event-location">新竹縣政府文化局演藝廳<br>19:30</div>
-            <div class="event-title">楊門女將</div>
-            <div class="event-subtitle">經典京劇</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
-            </div>
-            <div class="area">高雄</div>
-          </div>
-          <div class="event-card__body showPopup popup_9">
-            <div class="event-date">
-              <span>5</span>
-              <span class="date-slash">/</span>
-              <span>16</span>
-              <span class="event-day">.sun</span>
-            </div>
-            <div class="event-location">三餘書店<br>14:00-16:00</div>
-            <div class="event-title">潮味奇女子的文學人生<br>主題作家：三毛、曹又方</div>
-            <div class="event-subtitle">寫作工作坊｜午寐的間隙</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
-            </div>
-            <div class="area">新竹</div>
-          </div>
-          <div class="event-card__body showPopup popup_8">
-            <div class="event-date">
-              <span>5</span>
-              <span class="date-slash">/</span>
-              <span>21</span>
-              <span class="event-day">.fri</span>
-            </div>
-            <div class="event-location">國立清華大學 合勤演藝廳<br>19:00</div>
-            <div class="event-title">天上．人間．古中國的男與女</div>
-            <div class="event-subtitle">不朽愛情—牛郎和織女</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
-            </div>
-            <div class="area">新竹</div>
-          </div>
-          <div class="event-card__body showPopup popup_9">
-            <div class="event-date">
-              <span>5</span>
-              <span class="date-slash">/</span>
-              <span>22</span>
-              <span class="event-day">.sat</span>
-            </div>
-            <div class="event-location">或者 Or Book Store<br>14:30-16:00</div>
-            <div class="event-title">潮味奇女子的文學人生</div>
-            <div class="event-subtitle">系列活動 主題作家：張愛玲、聶華苓</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
-            </div>
-            <div class="area">台北</div>
-          </div>
-          <div class="event-card__body showPopup popup_9">
-            <div class="event-date">
-              <span>5</span>
-              <span class="date-slash">/</span>
-              <span>23</span>
-              <span class="event-day">.sun</span>
-            </div>
-            <div class="event-location">女書店<br>14:00-16:00</div>
-            <div class="event-title">潮味奇女子的文學人生<br>主題作家：蕭紅、羅蘭</div>
-            <div class="event-subtitle">座談｜來自北方的女子─蕭紅VS羅蘭</div>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
-            </div>
-            <div class="area">新竹</div>
-          </div>
-          <!-- 6 月錨點 -->
-          <div id="mobile_june"></div>
-          <div class="event-card__body showPopup popup_8">
-            <div class="event-date">
-              <span>5</span>
-              <span class="date-slash">/</span>
-              <span>28</span>
-              <span class="event-day">.fri</span>
-            </div>
-            <div class="event-location">國立清華大學 合勤演藝廳<br>1900</div>
-            <div class="event-title">天上．人間．古中國的男與女</div>
-            <div class="event-subtitle">全民運動—人人想成仙</div>
-          </div>
-        </div>
+      </div>
 
-        <!-- 6 月 -->
-        <div class="title-category">
-          <p>6月<span>JUNE</span>｜7月<span>JULY</span></p>
+      <!-- Mobile 5 月 -->
+      <div class="events-nav">
+        <div class="container">
+          <ul class="events-nav__ul">
+            <li class="events-nav__li active">
+              <p>5月<span>MAY</span></p>
+            </li>
+          </ul>
         </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
+      </div>
+      <div class="events-frame">
+        <div class="container">
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">新竹</div>
             </div>
-            <div class="area">新竹</div>
-          </div>
-          <div class="event-card__body showPopup popup_8">
-            <div class="event-date">
-              <span>6</span>
-              <span class="date-slash">/</span>
-              <span>04</span>
-              <span class="event-day">.fri</span>
+            <div class="event-card__body showPopup popup_8">
+              <div class="event-date">
+                <span>5</span>
+                <span class="date-slash">/</span>
+                <span>14</span>
+                <span class="event-day">.fri</span>
+              </div>
+              <div class="event-location">國立清華大學 合勤演藝廳<br>19:00</div>
+              <div class="event-title">天上．人間．古中國的男與女</div>
+              <div class="event-subtitle">天上眾神—人間的投影</div>
             </div>
-            <div class="event-location">國立清華大學 合勤演藝廳<br>19:00</div>
-            <div class="event-title">天上．人間．古中國的男與女</div>
-            <div class="event-subtitle">人間愛恨—七女為父報仇</div>
           </div>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">戲曲</p>
+              </div>
+              <div class="area">新竹</div>
+            </div>
+            <div class="event-card__body showPopup popup_4">
+              <div class="event-date">
+                <span>5</span>
+                <span class="date-slash">/</span>
+                <span>15</span>
+                <span class="event-day">.sat</span>
+              </div>
+              <div class="event-location">國立陽明交通大學 演藝廳<br>14:30</div>
+              <div class="event-title">紅樓夢崑曲 校園巡演</div>
+              <div class="event-subtitle">紅樓學者與崑曲藝術家的對話</div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">戲曲</p>
+              </div>
+              <div class="area">新竹</div>
+            </div>
+            <div class="event-card__body showPopup popup_5">
+              <div class="event-date">
+                <span>5</span>
+                <span class="date-slash">/</span>
+                <span>15</span>
+                <span class="event-day">.sat</span>
+              </div>
+              <div class="event-location">新竹縣政府文化局演藝廳<br>19:30</div>
+              <div class="event-title">楊門女將</div>
+              <div class="event-subtitle">經典京劇</div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">高雄</div>
+            </div>
+            <div class="event-card__body showPopup popup_9">
+              <div class="event-date">
+                <span>5</span>
+                <span class="date-slash">/</span>
+                <span>16</span>
+                <span class="event-day">.sun</span>
+              </div>
+              <div class="event-location">三餘書店<br>14:00-16:00</div>
+              <div class="event-title">潮味奇女子的文學人生<br>主題作家：三毛、曹又方</div>
+              <div class="event-subtitle">寫作工作坊｜午寐的間隙</div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">新竹</div>
+            </div>
+            <div class="event-card__body showPopup popup_8">
+              <div class="event-date">
+                <span>5</span>
+                <span class="date-slash">/</span>
+                <span>21</span>
+                <span class="event-day">.fri</span>
+              </div>
+              <div class="event-location">國立清華大學 合勤演藝廳<br>19:00</div>
+              <div class="event-title">天上．人間．古中國的男與女</div>
+              <div class="event-subtitle">不朽愛情—牛郎和織女</div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">新竹</div>
+            </div>
+            <div class="event-card__body showPopup popup_9">
+              <div class="event-date">
+                <span>5</span>
+                <span class="date-slash">/</span>
+                <span>22</span>
+                <span class="event-day">.sat</span>
+              </div>
+              <div class="event-location">或者 Or Book Store<br>14:30-16:00</div>
+              <div class="event-title">潮味奇女子的文學人生</div>
+              <div class="event-subtitle">系列活動 主題作家：張愛玲、聶華苓</div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">台北</div>
+            </div>
+            <div class="event-card__body showPopup popup_9">
+              <div class="event-date">
+                <span>5</span>
+                <span class="date-slash">/</span>
+                <span>23</span>
+                <span class="event-day">.sun</span>
+              </div>
+              <div class="event-location">女書店<br>14:00-16:00</div>
+              <div class="event-title">潮味奇女子的文學人生<br>主題作家：蕭紅、羅蘭</div>
+              <div class="event-subtitle">座談｜來自北方的女子─蕭紅VS羅蘭</div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">新竹</div>
+            </div>
+            <div class="event-card__body showPopup popup_8">
+              <div class="event-date">
+                <span>5</span>
+                <span class="date-slash">/</span>
+                <span>28</span>
+                <span class="event-day">.fri</span>
+              </div>
+              <div class="event-location">國立清華大學 合勤演藝廳<br>1900</div>
+              <div class="event-title">天上．人間．古中國的男與女</div>
+              <div class="event-subtitle">全民運動—人人想成仙</div>
+            </div>
+          </div>
+          <div id="mobile_june"></div>
         </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
-            </div>
-            <div class="area">台南</div>
-          </div>
-          <div class="event-card__body showPopup popup_9">
-            <div class="event-date">
-              <span>6</span>
-              <span class="date-slash">/</span>
-              <span>05</span>
-              <span class="event-day">.sat</span>
-            </div>
-            <div class="event-location">曬書店<br>15:00-17:00</div>
-            <div class="event-title">潮味奇女子的文學人生<br>主題作家：琦君、林海音</div>
-            <div class="event-subtitle">講座｜課本外的琦君</div>
-          </div>
+      </div>
+
+      <!-- Moobile 6 月 -->
+      <!-- 6 月錨點 -->
+      <div class="events-nav">
+        <div class="container">
+          <ul class="events-nav__ul">
+            <li class="events-nav__li active">
+              <p>6月<span>JUNE</span></p>
+              <p>｜7月<span>JULY</span></p>
+            </li>
+          </ul>
         </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">音樂</p>
+      </div>
+      <div class="events-frame">
+        <div class="container">
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">新竹</div>
             </div>
-            <div class="area">台南</div>
-          </div>
-          <div class="event-card__body showPopup popup_6">
-            <div class="event-date">
-              <span>6</span>
-              <span class="date-slash">/</span>
-              <span>09</span>
-              <span class="event-day">.wed</span>
+            <div class="event-card__body showPopup popup_8">
+              <div class="event-date">
+                <span>6</span>
+                <span class="date-slash">/</span>
+                <span>04</span>
+                <span class="event-day">.fri</span>
+              </div>
+              <div class="event-location">國立清華大學 合勤演藝廳<br>19:00</div>
+              <div class="event-title">天上．人間．古中國的男與女</div>
+              <div class="event-subtitle">人間愛恨—七女為父報仇</div>
             </div>
-            <div class="event-location">臺南文化中心演藝廳<br>19:30</div>
-            <div class="event-title">陸逸軒2021鋼琴獨奏會</div>
-            <div class="event-subtitle">Eric Lu 2021 Piano Recital</div>
           </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">台南</div>
             </div>
-            <div class="area">新竹</div>
-          </div>
-          <div class="event-card__body showPopup popup_9">
-            <div class="event-date">
-              <span>6</span>
-              <span class="date-slash">/</span>
-              <span>13</span>
-              <span class="event-day">.sun</span>
+            <div class="event-card__body showPopup popup_9">
+              <div class="event-date">
+                <span>6</span>
+                <span class="date-slash">/</span>
+                <span>05</span>
+                <span class="event-day">.sat</span>
+              </div>
+              <div class="event-location">曬書店<br>15:00-17:00</div>
+              <div class="event-title">潮味奇女子的文學人生<br>主題作家：琦君、林海音</div>
+              <div class="event-subtitle">講座｜課本外的琦君</div>
             </div>
-            <div class="event-location">或者 Or Book Store<br>14:30-16:00</div>
-            <div class="event-title">潮味奇女子的文學人生<br>主題作家：張愛玲、聶華苓</div>
-            <div class="event-subtitle">讀劇｜許小寒的同學會－張愛玲《心經》</div>
           </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">音樂</p>
+              </div>
+              <div class="area">台南</div>
             </div>
-            <div class="area">台南</div>
-          </div>
-          <div class="event-card__body showPopup popup_9">
-            <div class="event-date">
-              <span>6</span>
-              <span class="date-slash">/</span>
-              <span>19</span>
-              <span class="event-day">.sat</span>
+            <div class="event-card__body showPopup popup_6">
+              <div class="event-date">
+                <span>6</span>
+                <span class="date-slash">/</span>
+                <span>09</span>
+                <span class="event-day">.wed</span>
+              </div>
+              <div class="event-location">臺南文化中心演藝廳<br>19:30</div>
+              <div class="event-title">陸逸軒2021鋼琴獨奏會</div>
+              <div class="event-subtitle">Eric Lu 2021 Piano Recital</div>
             </div>
-            <div class="event-location">曬書店Ｘ新營市民學堂<br>15:00-17:00</div>
-            <div class="event-title">潮味奇女子的文學人生<br>主題作家：琦君、林海音</div>
-            <div class="event-subtitle">記錄片放映暨映後分享｜《兩地》</div>
           </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">新竹</div>
             </div>
-            <div class="area">高雄</div>
-          </div>
-          <div class="event-card__body showPopup popup_9">
-            <div class="event-date">
-              <span>6</span>
-              <span class="date-slash">/</span>
-              <span>20</span>
-              <span class="event-day">.sun</span>
+            <div class="event-card__body showPopup popup_9">
+              <div class="event-date">
+                <span>6</span>
+                <span class="date-slash">/</span>
+                <span>13</span>
+                <span class="event-day">.sun</span>
+              </div>
+              <div class="event-location">或者 Or Book Store<br>14:30-16:00</div>
+              <div class="event-title">潮味奇女子的文學人生<br>主題作家：張愛玲、聶華苓</div>
+              <div class="event-subtitle">讀劇｜許小寒的同學會－張愛玲《心經》</div>
             </div>
-            <div class="event-location">三餘書店<br>15:00-16:30</div>
-            <div class="event-title">潮味奇女子的文學人生<br>主題作家：三毛、曹又方</div>
-            <div class="event-subtitle">樂團演出｜你可能沒在聽，我還在講：創作者的日常與性別意識</div>
           </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">文史</p>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">台南</div>
             </div>
-            <div class="area">台北</div>
-          </div>
-          <div class="event-card__body showPopup popup_9">
-            <div class="event-date">
-              <span>6</span>
-              <span class="date-slash">/</span>
-              <span>27</span>
-              <span class="event-day">.sun</span>
+            <div class="event-card__body showPopup popup_9">
+              <div class="event-date">
+                <span>6</span>
+                <span class="date-slash">/</span>
+                <span>19</span>
+                <span class="event-day">.sat</span>
+              </div>
+              <div class="event-location">曬書店Ｘ新營市民學堂<br>15:00-17:00</div>
+              <div class="event-title">潮味奇女子的文學人生<br>主題作家：琦君、林海音</div>
+              <div class="event-subtitle">記錄片放映暨映後分享｜《兩地》</div>
             </div>
-            <div class="event-location">女書店<br>13:30-17:30</div>
-            <div class="event-title">潮味奇女子的文學人生<br>主題作家：蕭紅、羅蘭</div>
-            <div class="event-subtitle">電影放映暨映後分享｜《黃金時代》</div>
           </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">音樂</p>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">高雄</div>
             </div>
-            <div class="area">新竹</div>
-          </div>
-          <div class="event-card__body showPopup popup_7">
-            <div class="event-date">
-              <span>7</span>
-              <span class="date-slash">/</span>
-              <span>02</span>
-              <span class="event-day">.fri</span>
+            <div class="event-card__body showPopup popup_9">
+              <div class="event-date">
+                <span>6</span>
+                <span class="date-slash">/</span>
+                <span>20</span>
+                <span class="event-day">.sun</span>
+              </div>
+              <div class="event-location">三餘書店<br>15:00-16:30</div>
+              <div class="event-title">潮味奇女子的文學人生<br>主題作家：三毛、曹又方</div>
+              <div class="event-subtitle">樂團演出｜你可能沒在聽，我還在講：創作者的日常與性別意識</div>
             </div>
-            <div class="event-location">新竹市文化局演藝廳<br>19:30</div>
-            <div class="event-title">NSO馬勒傳奇</div>
-            <div class="event-subtitle">NSO The Legend of Mahler</div>
           </div>
-        </div>
-        <div class="event-card">
-          <div class="event-card__header">
-            <div class="dots">
-              <div class="dot bgRed_1"></div>
-              <div class="dot bgDark"></div>
-              <p class="title-event">音樂</p>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">文史</p>
+              </div>
+              <div class="area">台北</div>
             </div>
-            <div class="area">台南</div>
-          </div>
-          <div class="event-card__body showPopup popup_7">
-            <div class="event-date">
-              <span>7</span>
-              <span class="date-slash">/</span>
-              <span>03</span>
-              <span class="event-day">.sat</span>
+            <div class="event-card__body showPopup popup_9">
+              <div class="event-date">
+                <span>6</span>
+                <span class="date-slash">/</span>
+                <span>27</span>
+                <span class="event-day">.sun</span>
+              </div>
+              <div class="event-location">女書店<br>13:30-17:30</div>
+              <div class="event-title">潮味奇女子的文學人生<br>主題作家：蕭紅、羅蘭</div>
+              <div class="event-subtitle">電影放映暨映後分享｜《黃金時代》</div>
             </div>
-            <div class="event-location">臺南文化中心演藝廳<br>19:30</div>
-            <div class="event-title">NSO馬勒傳奇</div>
-            <div class="event-subtitle">NSO The Legend of Mahler</div>
           </div>
-        </div>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">音樂</p>
+              </div>
+              <div class="area">新竹</div>
+            </div>
+            <div class="event-card__body showPopup popup_7">
+              <div class="event-date">
+                <span>7</span>
+                <span class="date-slash">/</span>
+                <span>02</span>
+                <span class="event-day">.fri</span>
+              </div>
+              <div class="event-location">新竹市文化局演藝廳<br>19:30</div>
+              <div class="event-title">NSO馬勒傳奇</div>
+              <div class="event-subtitle">NSO The Legend of Mahler</div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-card__header">
+              <div class="dots">
+                <div class="dot bgRed_1"></div>
+                <div class="dot bgDark"></div>
+                <p class="title-event">音樂</p>
+              </div>
+              <div class="area">台南</div>
+            </div>
+            <div class="event-card__body showPopup popup_7">
+              <div class="event-date">
+                <span>7</span>
+                <span class="date-slash">/</span>
+                <span>03</span>
+                <span class="event-day">.sat</span>
+              </div>
+              <div class="event-location">臺南文化中心演藝廳<br>19:30</div>
+              <div class="event-title">NSO馬勒傳奇</div>
+              <div class="event-subtitle">NSO The Legend of Mahler</div>
+            </div>
+          </div>
+        </div> 
       </div>
     </div>
 
@@ -1628,7 +1658,7 @@
   <p class="copyright">台積心築藝術季 All rights reserved &#x24B8; 2021</p>
 
   <!-- Popup -->
-  <div class="popup">
+  <div class="popup initial-hidden">
       <div class="popup-frame">
         <!-- 裝飾球 -->
         <div class="popup_0_dots">
@@ -1960,34 +1990,12 @@
               <p>經典京劇</p>
             </div>
             <div class="popup-intro">
-              <p><span class="lead">領隊</span>洪惟助</p>
-              <p><span class="lead">主講</span>康來新、朱嘉雯</p>
-              <p><span class="lead">戲劇指導</span>溫宇航</p>
+              <p><span class="lead">主演</span>黃詩雅、林庭瑜、羅慎貞、劉化蒂、盛  鑑、戴心怡、王鶯驊、王耀星、陳清河、黃鈞晟</p>
             </div>
             <div class="popup-img"></div>
             <div class="popup-content">
-              <p>文學大家白先勇曾說：「《紅樓夢》是一部天書。」《紅樓夢》藏著許多的密碼，尤其每當出現戲曲主題時，往往牽動、隱喻著故事的發展走向。</p>
-              <p>臺灣崑劇團洪惟助團長特別邀請紅學家康來新教授及朱嘉雯教授，與專業崑劇演員，重現《紅樓夢》場景中的《占花魁．受吐》、《玉簪記．琴挑》、《西遊記．借扇》等經典折子戲，帶領觀眾進入紅樓故事，體驗大觀園的萬千世界。</p>
-            </div>
-            <div class="popup-info">
-              <p class="date">
-                <span>3</span>
-                <span class="date-slash">/</span>
-                <span>31</span>
-                <span class="day">.wed</span>
-              </p>
-              <p>19:00</p>
-              <p>國立中央大學 大講堂</p>
-            </div>
-            <div class="popup-info">
-              <p class="date">
-                <span>4</span>
-                <span class="date-slash">/</span>
-                <span>14</span>
-                <span class="day">.wed</span>
-              </p>
-              <p>19:00</p>
-              <p>國立成功大學 成功廳</p>
+              <p>《楊門女將》的故事自一場壽宴開始，百歲佘太君本與眾媳婦為遠在沙場的孫兒楊宗保慶生，卻迎來孫兒過世的噩耗，歡樂瞬成悲痛。佘太君強忍悲痛，率領穆桂英等楊門眾女將征敵，奇計襲敵，凱旋而歸。</p>
+              <p>楊家將系列故事，部部精采，但其中《楊門女將》因劇中角色眾多，甚少上演。國光劇團傾其全力，集結全團菁英上場，各顯亮點，高潮迭起，完全滿足了看戲、聽戲、賞戲的多重享受。本場飾演穆桂英的京劇新星黃詩雅嗓音亮美潤淨，武功紮實，將劇中面對丈夫死亡的悲痛轉為戰場上的才智勇猛的心境轉折，表現得絲絲入扣，令人讚賞。這是您絕不能錯過京劇大戲！</p>
             </div>
             <div class="popup-info">
               <p class="date">
@@ -1996,31 +2004,19 @@
                 <span>15</span>
                 <span class="day">.sat</span>
               </p>
-              <p>14:30</p>
-              <p>國立陽明交通大學 演藝廳</p>
+              <p>19:30</p>
+              <p>新竹縣政府文化局演藝廳</p>
+              <p>票價 400/600/800/1000/1200</p>
             </div>
             <div class="popup-link">
               <div class="row">
                 <span class="day-to">&#x25B6;</span>
-                <span>線上索票</span>
-                <a href="https://linktr.ee/tsmc.hsinchu.artsfestival" target="_blank">
-                  點我洽詢
-                  <span class="search-icon"></span>
-                </a>
+                <a href="https://www.opentix.life/program/1354981403371249669" target="_blank">OPENTIX 兩廳院文化生活售票系統</a>
               </div>
               <div class="row">
                 <span class="day-to">&#x25B6;</span>
                 <span>節目洽詢</span>
-                <a href="https://www.ncfta.gov.tw/guoguangopera_71.html" target="_blank">國光劇團 02-8866-9600 # 1679</a>
-              </div>
-              <div class="row">
-                <span class="day-to">&#x25B6;</span>
-                <span>索票洽詢</span>
-                <span class="links">
-                  <a href="https://in.ncu.edu.tw/ncu7195/" target="_blank">中央大學藝文中心 03-422-7151</a>
-                  <a href="http://artcenter.ncku.edu.tw/" target="_blank">成功大學藝術中心 06-275-7575 # 50014</a>
-                  <a href="https://acc.nctu.edu.tw/" target="_blank">陽明交通大學藝文中心 03-573-1960</a>
-                </span>
+                <a href="https://www.ncfta.gov.tw/guoguangopera_71.html" target="_blank">國光劇團 02-8866-9600 # 1679 </a>
               </div>
             </div>
           </div>

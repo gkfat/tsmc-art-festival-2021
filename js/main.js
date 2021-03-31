@@ -72,16 +72,6 @@ function checkHamburgerOpen() {
   }
 }
 
-// Dropdown Nav click function
-// $('.dropdown-item').on('click', function() {
-//   $(this).siblings().removeClass('active');
-//   $('.nav-items__li').removeClass('active');
-//   $('.dropdown-btn__a').addClass('active');
-//   if ( !$(this).hasClass('active') ) {
-//     $(this).addClass('active');
-//   }
-// });
-
 // Events NAV click function
 $('.events-nav__li').on('click', function() {
   if ( !$(this).hasClass('active') ) {
@@ -215,6 +205,8 @@ $('.closePopup').on('click', function() {
 
 // 初始化
 $(document).ready(() => {
+  scrollY = 0;
+  window.scrollTo(0, scrollY);
   //RWD
   if ( $( window ).width() < 768 ) {
     $('.colorDot').hide();
@@ -249,4 +241,5 @@ $(document).ready(() => {
     $('.events-frame .container').hide();
     $('.april').show();
   }
+  $('.initial-hidden').removeClass('initial-hidden');
 })

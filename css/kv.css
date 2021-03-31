@@ -73,3 +73,13 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .icon-scroll {
+    width: 25px;
+    height: 50px;
+  }
+  .icon-scroll:after {
+    left: -90%;
+  }
+}

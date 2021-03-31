@@ -289,13 +289,24 @@
     font-size: 2rem;
   }
   .popup-subtitle {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
   .popup-img {
     margin: 10px auto;
   }
 }
 @media screen and (max-width: 768px) {
+  .popup-header .closePopup {
+    top: 20px;
+    right: 30px;
+  }
+  .popup-info .date .day-to {
+    font-size: 1.2rem;
+  }
+  .popup-info .date {
+    font-size: 1.6rem;
+  }
   .popup {
     padding: 20px;
   }

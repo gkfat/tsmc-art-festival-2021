@@ -235,23 +235,28 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .events-nav, .events-desktop {
+  .events-nav-desktop, .events-desktop {
     display: none;
   }
   .mobile-events {
     display: block;
   }
+  .events-nav {
+    margin-top: 30px;
+  }
   .events-frame {
     height: auto;
   }
-  .events-nav__li {
-    width: 33%;
+  .events-nav__li, .events-nav__li.active {
+    width: 100%;
+    margin: 0 auto;
   }
   .events-nav__li p {
     font-size: 1.1rem;
   }
   .event-card {
     width: 100%;
-    height: 200px;
+    height: auto;
+    margin: 0 auto 20px;
   }
 }
