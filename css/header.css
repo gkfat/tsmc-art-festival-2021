@@ -111,8 +111,8 @@
   right: 30px;
 }
 .hamburger {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   position: relative;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
@@ -157,7 +157,12 @@
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-  padding: 30px 0;
+  padding: 20px 0;
+}
+.menu-mobile .navbar-brand .logo {
+  width: 200px;
+  background-size: contain;
+  margin: 0 auto;
 }
 .menu-item {
   display: block;
@@ -166,9 +171,22 @@
   width: 100%;
   font-size: 1.4rem;
 }
+a.menu-item, a.menu-item:visited, a.menu-item:link {
+  color: var(--darkGray);
+}
+span.menu-item {
+  font-size: 0.9rem;
+  padding: 2px 0;
+}
 .menu .nav-items__ul {
   justify-content: center;
   font-size: 1.2rem;
+}
+.menu .dropdown-item {
+  padding: 0 10px;
+}
+a.dropdown-item, a.dropdown-item:visited, a.dropdown-item:link {
+  color: var(--darkGray);
 }
 
 /* RWD */
