@@ -29,22 +29,6 @@ window.onscroll = () => {
   }
 }
 
-// Header Nav click function
-// $('.nav-items__li').on('click', function() {
-//   $(this).siblings().removeClass('active');
-//   $('.dropdown-item').removeClass('active');
-//   $('.dropdown-btn__a').removeClass('active');
-//   if ( !$(this).hasClass('active') ) {
-//     $(this).addClass('active');
-//   }
-// });
-// $('.dropdown-btn__a').on('click', function() {
-//   $('.nav-items__li').removeClass('active');
-//   if ( !$(this).hasClass('active') ) {
-//     $(this).addClass('active');
-//   }
-// })
-
 // Mobile Nav click function
 $('.hamburger').on('click', function() {
   scrollY = window.scrollY;
