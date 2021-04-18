@@ -223,6 +223,7 @@
   background: url('../assets/popup-img__7.jpg') no-repeat no-repeat center;
   background-size: 100%;
 }
+
 /* 文史 */
 #popup_8 .popup-img {
   background: url('../assets/popup-img__8.jpg') no-repeat no-repeat center;
@@ -265,6 +266,38 @@
 .popup_9_dots .flowerDot_2 {
   top: 80%;
 }
+
+/* 人物資訊 */
+.person-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.person-info p {
+  width: 70%;
+  margin: 0;
+}
+.person-info__img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+.person-info__img-1 {
+  background: url('../assets/person-info_1.png') no-repeat no-repeat center;
+  background-size: 100%;
+}
+.person-info__img-2 {
+  background: url('../assets/person-info_2.png') no-repeat no-repeat center;
+  background-size: 100%;
+}
+.person-info__img-3 {
+  background: url('../assets/person-info_3.png') no-repeat no-repeat center;
+  background-size: 100%;
+}
+
 
 /* RWD */
 @media screen and (max-width: 1200px) {
@@ -320,5 +353,13 @@
     margin: 20px auto;
     height: 250px;
     background-size: contain;
+  }
+  .person-info p {
+    width: 100%;
+  }
+  .person-info__img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
   }
 }
