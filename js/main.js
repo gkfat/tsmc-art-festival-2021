@@ -152,7 +152,10 @@ $('.showPopup').on('click', function() {
   scrollY = window.scrollY;
   const classArray = $(this).attr('class').split(' ');
   showingPopupId = classArray[classArray.length - 1];
-  $(`.popup, #${showingPopupId}, .${showingPopupId}_dots`).show();
+  $(`.popup, #${showingPopupId}`).show();
+  if ( $( window ).width() > 992 ) {
+    $(`.${showingPopupId}_dots`).show();
+  }
   $('.popup').scrollTop();
   $('html, body').css('overflow-y', 'hidden');
   $('.section-nav').css('top', '-200px');
